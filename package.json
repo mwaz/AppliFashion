@@ -1,0 +1,12 @@
+{
+  "name": "applifashion",
+  "version": "1.0.0",
+  "description": "An applitools sponsored hackathon that makes use of Visual AI and cypress to run tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
