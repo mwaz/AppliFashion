@@ -4,12 +4,18 @@
   "description": "An applitools sponsored hackathon that makes use of Visual AI and cypress to run tests",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test:dev": "npx cypress run --env env=dev",
+    "test:visual:dev": "npm run test:dev VisualAITests.spec.js",
+    "test:functional:dev": "npm run test:dev TraditionalTests.spec.js",
+    "open": "npx cypress open"
   },
   "keywords": [],
-  "author": "",
+  "author": "Waweru Mwaura",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "cypress": "^4.7.0"
+  },
+  "dependencies": {
+    "@applitools/eyes-cypress": "^3.11.1"
   }
 }

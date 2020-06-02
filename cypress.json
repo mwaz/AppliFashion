@@ -1,0 +1,10 @@
+{
+    "integrationsFolder": "cypress/tests",
+    "numTestsKeptInMemory": 50,
+    "ignoreTestFiles": [
+        "**/__snapshots__/*",
+        "**/__image_snapshots__/*"
+      ],
+      "video": false,
+      "chromeWebSecurity": false
+}
