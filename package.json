@@ -5,17 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test:dev": "npx cypress run --env env=dev",
-    "test:visual:dev": "npm run test:dev VisualAITests.spec.js",
-    "test:functional:dev": "npm run test:dev TraditionalTests.spec.js",
-    "open": "npx cypress open"
+    "test:visual:dev": "npm run test:dev VisualAITestsjs",
+    "test:functional:dev": "npm run test:dev TraditionalTests --browser firefox:nightly ",
+    "open": "npx cypress open",
+    "test:chrome": "cypress run --browser chrome --env browser=chrome",
+    "test:firefox": "cypress run --browser firefox:nightly --env browser=firefox",
+    "test:edge": "cypress run --browser edge:dev --env browser=edge"
   },
   "keywords": [],
   "author": "Waweru Mwaura",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^4.7.0"
-  },
-  "dependencies": {
+    "cypress": "^4.7.0",
     "@applitools/eyes-cypress": "^3.11.1"
-  }
+  },
+  "dependencies": {}
 }
