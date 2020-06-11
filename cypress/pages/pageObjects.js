@@ -37,8 +37,19 @@ cartIconTooltip: () => "#A__tooltip__232",
 filterButton: () => "#filterBtn",
 resetButton: () => "#resetBtn",
 sortOptionCount: () => "#sort>option",
-itemSortingDropdown: () => "#DIV__sortselect__193"
-
+itemSortingDropdown: () => "#DIV__sortselect__193",
+aboutUs: () => "#A____425",
+faq: () => "#A____427",
+help: () => "#A____429",
+myAccount: () => "#A____431",
+blog: () => "#A____433",
+contacts: () => "#A____435",
+quickLinksDropdown: () => "#H3____421",
+contactsDropdown: () => "#H3____437",
+keepInTouchDropdown: () => "#H3____447",
+contactEmail: () => "#A____445",
+contactLocation: () => "#LI____440",
+keepInTouchEmail: () => "#email_newsletter"
 };
 
 const actions = {
@@ -61,6 +72,18 @@ const actions = {
         cy.get('#sort').select('Sort by price: low to high').should('have.value', 'price');
         cy.get('#sort').select('Sort by price: high to').should('have.value', 'price-desc');
     },
+    clickQuickLinksDropdown(){
+        cy.get(elements.quickLinksDropdown()).click();
+        cy.wait(500)
+    },
+    clickContactsDropdown(){
+        cy.get(elements.contactsDropdown()).click();
+    },
+    clickKeepInTouchDropdown(){
+        cy.get(elements.keepInTouchDropdown()).click();
+    }
+
+
 
 };
 
@@ -80,7 +103,23 @@ const expects = {
     },
     sortingOptionstoEqual(number){
         cy.get(elements.sortOptionCount()).should().eq(`${number}`);
+    }, 
+    validateQuickLinkItems() {
+        cy.get(elements.aboutUs()).should('be.visible');
+        cy.get(elements.faq()).should('be.visible');
+        cy.get(elements.help()).should('be.visible');
+        cy.get(elements.myAccount()).should('be.visible');
+        cy.get(elements.blog()).should('be.visible');
+        cy.get(elements.contacts()).should('be.visible');
+    },
+    validateContactItems() {
+        cy.get(elements.contactLocation()).should('be.visible');
+        cy.get(elements.contactEmail()).should('be.visible');
+    },
+    validateKeepInTouchItems(){
+        cy.get(elements.keepInTouchEmail()).should('be.visible');
     }
+
 }
 
 
