@@ -164,7 +164,6 @@ context('Cross-Device Elements Test', () => {
       cy.viewport(size[0], size[1]);
     });
     it('sample test');
-
   });
 
   describe('Desktop and Tablet Tests (1200 X 700, 768 X 700)', () => {
@@ -187,18 +186,28 @@ context('Cross-Device Elements Test', () => {
         shouldInvokeAttribute(29, "shows placeholder value of the search field", elements.searchInput(),
           viewPortSize(size), 'placeholder', 'Search over 10,000 shoes!');
       });
-      describe('Shows footer items ', () => {
-        it('shows quick links footer items', () => {
+      describe('Shows footer items', () => {
+        it(`shows quick links footer items [${checkSizes(size)}]`, () => {
           expects.validateQuickLinkItems();
-          shouldBeVisible(30, "footer quick links should be present" , elements.footerQuickLinks(), viewPortSize(size));
+          shouldBeVisible(30, "footer quick links should be present" , elements.quickLinksDropdown(), viewPortSize(size));
         });
-        it('shows contacts footer items', () => {
-          expects.validateContactsItems();
-          shouldBeVisible(30, "footer contact details should be present" , elements.footerQuickLinks(), viewPortSize(size));
+        it(`shows contacts footer items [${checkSizes(size)}]`, () => {
+          expects.validateContactItems();
+          shouldBeVisible(30, "footer contact details should be present" , elements.contactsDropdown(), viewPortSize(size));
         });
+  
         describe('shows keep in touch footer items', () => {
-          it('shows email');
-          it('shows email placeholder');
+          beforeEach( () => {
+            expects.validateKeepInTouchItems();
+          })
+          it(`shows keep in touch dropdown [${checkSizes(size)}]`, () => {
+            shouldBeVisible(30, "footer keep in touch details should be present" , elements.keepInTouchDropdown(), viewPortSize(size));
+          });
+         
+          it(`shows email placeholder [${checkSizes(size)}]`, () => {
+            shouldInvokeAttribute(23, "shows placeholder value of the keep in touch email field", elements.keepInTouchEmail(),
+          viewPortSize(size), 'placeholder', 'Your email');
+          });
         });
       });
     });
@@ -235,7 +244,7 @@ context('Cross-Device Elements Test', () => {
 
 
 
-  describe.only('Iphone Viewport Tests (375 * 812)', () => {
+  describe('Iphone Viewport Tests (375 * 812)', () => {
     const size = [375, 812];
     beforeEach(() => {
       cy.viewport(size[0], size[1]);
