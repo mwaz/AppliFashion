@@ -33,24 +33,24 @@ context('Cross-Device Elements Test', () => {
       });
 
       it(`Displays the top banner on viewport [${checkSizes(size)}]`, () => {
-        shouldBeVisible(2, "Top banner is displayed", elements.topBanner(), viewPortSize(size));
+        shouldBeVisible(1, "Top banner is displayed", elements.topBanner(), viewPortSize(size));
       });
 
       it(`Displays search icon on viewport [${checkSizes(size)}]`, () => {
-        shouldBeVisible(3, "Search Icon is displayed", elements.searchIcon(), viewPortSize(size));
+        shouldBeVisible(1, "Search Icon is displayed", elements.searchIcon(), viewPortSize(size));
       });
 
       it(`Displays Account icon on viewport [${checkSizes(size)}]`, () => {
-        shouldBeVisible(4, "User account icon is displayed", elements.accessLink(), viewPortSize(size));
+        shouldBeVisible(1, "User account icon is displayed", elements.accessLink(), viewPortSize(size));
       });
 
       it(`Displays shoppingCart icon on navbar viewport [${checkSizes(size)}]`, () => {
-        shouldBeVisible(5, "Shopping Cart is displayed on navbar", elements.shoppingCart(), viewPortSize(size));
+        shouldBeVisible(1, "Shopping Cart is displayed on navbar", elements.shoppingCart(), viewPortSize(size));
       });
 
       it(`Shows sorting options with consistent number of items on dropdown [${checkSizes(size)}]`, () => {
         actions.selectSortingDropdown();
-        shouldBeVisible(29, "shows sorting options and count on product page", elements.itemSortingDropdown(), viewPortSize(size));
+        shouldBeVisible(1, "shows sorting options and count on product page", elements.itemSortingDropdown(), viewPortSize(size));
       });
 
 
@@ -71,16 +71,16 @@ context('Cross-Device Elements Test', () => {
       describe('Shows footer items requiring no interaction', () => {
         it(`shows language selection option [${checkSizes(size)}]`, () => {
           actions.clickLanguageSelector();
-          shouldBeVisible(9, "language selector dropdown is present", elements.languageSelector(), viewPortSize(size));
+          shouldBeVisible(1, "language selector dropdown is present", elements.languageSelector(), viewPortSize(size));
 
         });
         it(`shows currency selection option [${checkSizes(size)}]`, () => {
           actions.clickCurrencySelector();
-          shouldBeVisible(10, "currency selector dropdown is present", elements.currencySelector(), viewPortSize(size));
+          shouldBeVisible(1, "currency selector dropdown is present", elements.currencySelector(), viewPortSize(size));
 
         });
         it(`shows copyright information [${checkSizes(size)}]`, () => {
-          shouldBeVisible(11, "copyright information is present", elements.copyrightInformation(), viewPortSize(size));
+          shouldBeVisible(1, "copyright information is present", elements.copyrightInformation(), viewPortSize(size));
 
         });
       });
@@ -95,25 +95,25 @@ context('Cross-Device Elements Test', () => {
     });
     context('shows sidebar for filtering shoes', () => {
       it('shows type filtering option on sidebar', () => {
-        shouldBeVisible(12, "type filtering option is present", elements.typeFilter(), viewPortSize(size));
+        shouldBeVisible(1, "type filtering option is present", elements.typeFilter(), viewPortSize(size));
       });
       it('shows consistent number of items in type filter', () => {
         shouldEqual(13, "shows  consistency of items in type filter section", elements.typeFilterElements(), viewPortSize(size), 4);
       });
       it('shows colors filtering option on sidebar', () => {
-        shouldBeVisible(14, "colors filtering option is present", elements.colorsFilter(), viewPortSize(size));
+        shouldBeVisible(1, "colors filtering option is present", elements.colorsFilter(), viewPortSize(size));
       });
       it('shows consistent number of items in colors filter', () => {
         shouldEqual(15, "shows  consistency of items in colors filter section", elements.colorsFilterElements(), viewPortSize(size), 5);
       });
       it('shows brands filtering option on sidebar', () => {
-        shouldBeVisible(16, "brands filtering option is present", elements.brandsFilter(), viewPortSize(size));
+        shouldBeVisible(1, "brands filtering option is present", elements.brandsFilter(), viewPortSize(size));
       });
       it('shows consistent number of items in brands filter', () => {
         shouldEqual(17, "shows  consistency of items in brands filter section", elements.brandsFilterElements(), viewPortSize(size), 5);
       });
       it('shows price filtering option on sidebar', () => {
-        shouldBeVisible(18, "price filtering option is present", elements.priceFilter(), viewPortSize(size));
+        shouldBeVisible(1, "price filtering option is present", elements.priceFilter(), viewPortSize(size));
       });
       it('shows consistent number of items in price filter', () => {
         shouldEqual(19, "shows  consistency of items in colors price section", elements.priceFilterElements(), viewPortSize(size), 4);
@@ -124,17 +124,17 @@ context('Cross-Device Elements Test', () => {
       it('shows wishlist icon and its tooltip', () => {
         actions.hoverOnfirstItem();
         expects.wishlistTooltipToBePresent();
-        shouldBeVisible(20, "wishlist icon with its tooltip is present", elements.wishListIcon(), viewPortSize(size));
+        shouldBeVisible(1, "wishlist icon with its tooltip is present", elements.wishListIcon(), viewPortSize(size));
       });
       it('shows cart icon and its tooltip', () => {
         actions.hoverOnfirstItem();
         expects.cartTooltipToBePresent();
-        shouldBeVisible(21, "cart icon with its tooltip is present", elements.cartIcon(), viewPortSize(size));
+        shouldBeVisible(1, "cart icon with its tooltip is present", elements.cartIcon(), viewPortSize(size));
       });
       it('shows compare icon and its tooltip', () => {
         actions.hoverOnfirstItem();
         expects.compareTooltipToBePresent();
-        shouldBeVisible(22, "compare icon with its tooltip is present", elements.compareIcon(), viewPortSize(size));
+        shouldBeVisible(1, "compare icon with its tooltip is present", elements.compareIcon(), viewPortSize(size));
       })
     })
 
@@ -144,17 +144,17 @@ context('Cross-Device Elements Test', () => {
 
     });
     it('shows filter button', () => {
-      shouldBeVisible(24, "filter button is present", elements.filterButton(), viewPortSize(size));
+      shouldBeVisible(1, "filter button is present", elements.filterButton(), viewPortSize(size));
     });
     it('shows reset button', () => {
-      shouldBeVisible(25, "reset button is present", elements.resetButton(), viewPortSize(size));
+      shouldBeVisible(1, "reset button is present", elements.resetButton(), viewPortSize(size));
     });
 
     it('shows wishlist icon on navbar', () => {
-      shouldBeVisible(26, "wish list icon is present on navbar", elements.wishListIconNavbar(), viewPortSize(size));
+      shouldBeVisible(1, "wish list icon is present on navbar", elements.wishListIconNavbar(), viewPortSize(size));
     });
     it('shows submenu for item categories on navbar', () => {
-      shouldBeVisible(28, "shows submenu for item categories", elements.submenu(), viewPortSize(size));
+      shouldBeVisible(1, "shows submenu for item categories", elements.submenu(), viewPortSize(size));
     });
   });
 
@@ -179,7 +179,7 @@ context('Cross-Device Elements Test', () => {
       });
       it(`shows cart icon with items ready for checkout [${checkSizes(size)}]`, () => {
         expects.cartIconToBePresent();
-        shouldBeVisible(30, "cart icon with items", elements.shoppingCartItemCount(), viewPortSize(size));
+        shouldBeVisible(1, "cart icon with items", elements.shoppingCartItemCount(), viewPortSize(size));
       });
 
       it(`shows search placeholder on the search field [${checkSizes(size)}]`, () => {
@@ -189,11 +189,11 @@ context('Cross-Device Elements Test', () => {
       describe('Shows footer items', () => {
         it(`shows quick links footer items [${checkSizes(size)}]`, () => {
           expects.validateQuickLinkItems();
-          shouldBeVisible(30, "footer quick links should be present" , elements.quickLinksDropdown(), viewPortSize(size));
+          shouldBeVisible(1, "footer quick links should be present" , elements.quickLinksDropdown(), viewPortSize(size));
         });
         it(`shows contacts footer items [${checkSizes(size)}]`, () => {
           expects.validateContactItems();
-          shouldBeVisible(30, "footer contact details should be present" , elements.contactsDropdown(), viewPortSize(size));
+          shouldBeVisible(1, "footer contact details should be present" , elements.contactsDropdown(), viewPortSize(size));
         });
   
         describe('shows keep in touch footer items', () => {
@@ -201,7 +201,7 @@ context('Cross-Device Elements Test', () => {
             expects.validateKeepInTouchItems();
           })
           it(`shows keep in touch dropdown [${checkSizes(size)}]`, () => {
-            shouldBeVisible(30, "footer keep in touch details should be present" , elements.keepInTouchDropdown(), viewPortSize(size));
+            shouldBeVisible(1, "footer keep in touch details should be present" , elements.keepInTouchDropdown(), viewPortSize(size));
           });
          
           it(`shows email placeholder [${checkSizes(size)}]`, () => {
@@ -228,15 +228,15 @@ context('Cross-Device Elements Test', () => {
         describe('shows shopping utilities', () => {
           it(`shows wishlist icon and its tooltip [${checkSizes(size)}]`, () => {
             expects.wishlistTooltipToBePresent();
-            shouldBeVisible(31, "wishlist icon with its tooltip is present", elements.wishListIcon(), viewPortSize(size));
+            shouldBeVisible(1, "wishlist icon with its tooltip is present", elements.wishListIcon(), viewPortSize(size));
           });
           it(`shows cart icon and its tooltip [${checkSizes(size)}]`, () => {
             expects.cartTooltipToBePresent();
-            shouldBeVisible(32, "cart icon with its tooltip is present", elements.cartIcon(), viewPortSize(size));
+            shouldBeVisible(1, "cart icon with its tooltip is present", elements.cartIcon(), viewPortSize(size));
           });
           it(`shows compare icon and its tooltip [${checkSizes(size)}]`, () => {
             expects.compareTooltipToBePresent();
-            shouldBeVisible(33, "compare icon with its tooltip is present", elements.compareIcon(), viewPortSize(size));
+            shouldBeVisible(1, "compare icon with its tooltip is present", elements.compareIcon(), viewPortSize(size));
           })
         });
       });
@@ -254,12 +254,12 @@ context('Cross-Device Elements Test', () => {
       it('shows quick links footer items', () => {
         actions.clickQuickLinksDropdown();
         expects.validateQuickLinkItems();
-        shouldBeVisible(30, "footer quick links should be present" , elements.quickLinksDropdown(), viewPortSize(size));
+        shouldBeVisible(1, "footer quick links should be present" , elements.quickLinksDropdown(), viewPortSize(size));
       });
       it('shows contacts footer items', () => {
         actions.clickContactsDropdown();
         expects.validateContactItems();
-        shouldBeVisible(30, "footer contact details should be present" , elements.contactsDropdown(), viewPortSize(size));
+        shouldBeVisible(1, "footer contact details should be present" , elements.contactsDropdown(), viewPortSize(size));
       });
 
       describe('shows keep in touch footer items', () => {
@@ -268,7 +268,7 @@ context('Cross-Device Elements Test', () => {
           expects.validateKeepInTouchItems();
         })
         it('shows keep in touch dropdown', () => {
-          shouldBeVisible(30, "footer keep in touch details should be present" , elements.keepInTouchDropdown(), viewPortSize(size));
+          shouldBeVisible(1, "footer keep in touch details should be present" , elements.keepInTouchDropdown(), viewPortSize(size));
         });
        
         it('shows email placeholder', () => {
