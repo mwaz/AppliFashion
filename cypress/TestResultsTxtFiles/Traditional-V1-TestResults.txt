@@ -980,3 +980,117 @@
 "Task: 29, Test Name: shows sorting options and count on product page, DOM Id: #DIV__sortselect__193, Browser: undefined, Viewport: 768 X 700, Device: Laptop, Status: Pass
 "Task: 1, Test Name: Logo is displayed, DOM Id: #A____8, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
 "Task: 2, Test Name: Top banner is displayed, DOM Id: #DIV__topbanner__187, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 2, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 2, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 2, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 2, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 2, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 2, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 2, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 1, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 2, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 2, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 2, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 2, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 1, Test Name: can filter all black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 2, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: 763 X 700, Device: Laptop, Status: Pass
+"Task: 3, Test Name: shows  two filtered black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
+"Task: 4, Test Name: shows single filtered black shoes based on price, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Laptop, Status: Pass
