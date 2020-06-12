@@ -18,8 +18,17 @@ languageSelector: () => "#DIV__styledsele__459",
 copyrightInformation: () => "#DIV__collg__470",
 typeFilter: () => "#A__opened__75",
 colorsFilter: () => "#A__opened__100",
+colorsFilterBlack: () => "#SPAN__checkmark__107",
+colorsFilterWhite: () => "#SPAN__checkmark__112",
+colorsFilterBlue: () => "#SPAN__checkmark__117",
+colorsFilterGreen: () => "#SPAN__checkmark__122",
+colorsFilterYellow: () => "#SPAN__checkmark__127",
 brandsFilter: () => "#A__opened__130",
 priceFilter: () => "#A__opened__160",
+priceFilterZeroToFifty: () => "#SPAN__checkmark__167",
+priceFilterFiftyToOneHundred:  () => "#SPAN__checkmark__172",
+priceFilterOneHundredToOneFifty:  () => "#SPAN__checkmark__177",
+priceFilterOneFiftyToFiveHundred:  () => "#SPAN__checkmark__182",
 typeFilterElements: () => "#filter_0 ul li",
 colorsFilterElements: () => "#filter_1 ul li",
 brandsFilterElements: () => "#filter_2 ul li",
@@ -49,7 +58,8 @@ contactsDropdown: () => "#H3____437",
 keepInTouchDropdown: () => "#H3____447",
 contactEmail: () => "#A____445",
 contactLocation: () => "#LI____440",
-keepInTouchEmail: () => "#email_newsletter"
+keepInTouchEmail: () => "#email_newsletter",
+sidebarFilterButton: () => "#A__openfilter__206",
 };
 
 const actions = {
@@ -81,9 +91,22 @@ const actions = {
     },
     clickKeepInTouchDropdown(){
         cy.get(elements.keepInTouchDropdown()).click();
+    },
+    clickBlackColorFilter(){
+        cy.get(elements.colorsFilterBlack()).click();
+    },
+    clickZeroToFiftyPriceFilter(){
+        cy.get(elements.priceFilterZeroToFifty()).click();
+    },
+    clickFilterButton(){
+        cy.get(elements.filterButton()).click();
+    },
+    openFilterNavigationSideBar(){
+        cy.get(elements.sidebarFilterButton()).click();
+    },
+    resetFilter(){
+        cy.get(elements.resetButton()).click({force: true});
     }
-
-
 
 };
 
@@ -104,7 +127,7 @@ const expects = {
     sortingOptionstoEqual(number){
         cy.get(elements.sortOptionCount()).should().eq(`${number}`);
     }, 
-    validateQuickLinkItems() {
+    validateQuickLinkItems(){
         cy.get(elements.aboutUs()).should('be.visible');
         cy.get(elements.faq()).should('be.visible');
         cy.get(elements.help()).should('be.visible');
@@ -112,14 +135,28 @@ const expects = {
         cy.get(elements.blog()).should('be.visible');
         cy.get(elements.contacts()).should('be.visible');
     },
-    validateContactItems() {
+    validateContactItems(){
         cy.get(elements.contactLocation()).should('be.visible');
         cy.get(elements.contactEmail()).should('be.visible');
     },
     validateKeepInTouchItems(){
         cy.get(elements.keepInTouchEmail()).should('be.visible');
+    }, 
+    colorFilterIsVisible(){
+        cy.get(elements.colorsFilter()).should('be.visible');
+        cy.get(elements.colorsFilterBlack()).should('be.visible');
+        cy.get(elements.colorsFilterWhite()).should('be.visible');
+        cy.get(elements.colorsFilterBlue()).should('be.visible');
+        cy.get(elements.colorsFilterGreen()).should('be.visible');
+        cy.get(elements.colorsFilterYellow()).should('be.visible');
+    },
+    priceFilterIsVisible(){
+        cy.get(elements.priceFilter()).should('be.visible');
+        cy.get(elements.priceFilterZeroToFifty()).should('be.visible');
+        cy.get(elements.priceFilterFiftyToOneHundred()).should('be.visible');
+        cy.get(elements.priceFilterOneHundredToOneFifty()).should('be.visible');
+        cy.get(elements.priceFilterOneFiftyToFiveHundred()).should('be.visible');
     }
-
 }
 
 
