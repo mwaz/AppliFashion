@@ -3,7 +3,8 @@
 const elements = {
 topBanner: () => "#DIV__topbanner__187",
 submenu: () => "#UL____21",
-searchIcon: () => "#A__btnsearchm__59",
+searchIconIphone: () => "#A__btnsearchm__59",
+searchIcon: () => "#BUTTONsubmit____43",
 searchInput: () => "#INPUTtext____42",
 accessLink: () => "#DIV__dropdowndr__55",
 wishListIconNavbar: () => "#A__wishlist__52",
@@ -60,6 +61,18 @@ contactEmail: () => "#A____445",
 contactLocation: () => "#LI____440",
 keepInTouchEmail: () => "#email_newsletter",
 sidebarFilterButton: () => "#A__openfilter__206",
+productPageShoeImage: () => "#shoe_img",
+productPageShoeName: () => "#shoe_name",
+productPageShoeRating: () => "#SPAN__rating__76",
+productPageShoeRatingId: () => "#SMALL____84",
+productPageShoeRatingText: () => "#BR____85",
+productPageShoeSize: () => "#DIV__row__88",
+productPageShoeQuantity: () => "#DIV__row__98",
+productPageShoeCartButton: () => "#A__btn__114",
+productPageShoeOldPrice: () => "#new_price",
+productPageShoeNewPrice: () => "#old_price",
+productPageShoeDiscount: () => "#discount",
+
 };
 
 const actions = {
@@ -106,6 +119,9 @@ const actions = {
     },
     resetFilter(){
         cy.get(elements.resetButton()).click({force: true});
+    },
+    clickFirstBlackShoe(){
+        cy.get(elements.firstBlackShoeImage()).click();
     }
 
 };
@@ -156,6 +172,21 @@ const expects = {
         cy.get(elements.priceFilterFiftyToOneHundred()).should('be.visible');
         cy.get(elements.priceFilterOneHundredToOneFifty()).should('be.visible');
         cy.get(elements.priceFilterOneFiftyToFiveHundred()).should('be.visible');
+    },
+    validateProductImageElements(){
+        cy.get(elements.productPageShoeName()).should('be.visible');
+        cy.get(elements.productPageShoeRating()).should('be.visible');
+        cy.get(elements.productPageShoeRatingId()).should('be.visible');
+        // cy.get(elements.productPageShoeRatingText()).should('be.visible');
+        cy.get(elements.productPageShoeSize()).should('be.visible');
+        cy.get(elements.productPageShoeQuantity()).should('be.visible');
+        cy.get(elements.productPageShoeCartButton()).should('be.visible');
+        cy.get(elements.productPageShoeOldPrice()).should('be.visible');
+        cy.get(elements.productPageShoeNewPrice()).should('be.visible');
+        cy.get(elements.productPageShoeDiscount()).should('be.visible');
+    },
+    validateProductImageUrl({productId}){
+        cy.url().should('contain', `${productId}`);
     }
 }
 
