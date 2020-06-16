@@ -5,9 +5,19 @@ import {
   shouldInvokeAttribute,
   viewPortSize,
   checkSizes,
+  fetchTestTitle,
+  switchViewports
 } from '../../utils/utilityFunctions';
 import { actions, elements, expects } from '../../pages/pageObjects';
-const viewports = [[1200, 700], [768, 700], [375, 812]];
+// const viewports = [[1200, 700], [768, 700], [375, 812]];
+
+const viewports = {
+  laptop: [1200, 700],
+  tablet: [768, 700],
+  mobile: [375, 812],
+}; 
+const { laptop, tablet, mobile } = viewports;
+
 
 
 context('Cross-Device Elements Test', () => {
@@ -17,195 +27,200 @@ context('Cross-Device Elements Test', () => {
   });
 
   describe('All Viewport Tests', () => {
-    viewports.forEach((size) => {
-      beforeEach(() => {
-        if (Cypress._.isArray(size)) {
-          cy.viewport(size[0], size[1])
+    const viewports = [tablet, mobile, laptop];
+    viewports.forEach(size => {
 
-        } else {
-          cy.viewport(size)
-        }
-
+      describe(`Viewport verification tests on viewport: [${checkSizes(size)}]`, function(){
+        it(`Displays logo`, function(){
+          switchViewports(size);
+          shouldBeVisible(fetchTestTitle(this), elements.logo(), viewPortSize(size));
+        });
+        it(`Displays the top banner`, function(){
+          switchViewports(size);
+          shouldBeVisible(fetchTestTitle(this), elements.topBanner(), viewPortSize(size));
+        });
+        it(`Displays Account icon`, function(){
+          switchViewports(size);
+          shouldBeVisible(fetchTestTitle(this), elements.accessLink(), viewPortSize(size));
+        });
+        it(`Displays shoppingCart icon on navbar`, function(){
+          switchViewports(size);
+          shouldBeVisible(fetchTestTitle(this), elements.shoppingCart(), viewPortSize(size));
+        });
+        it(`Shows sorting options with consistent number of items on dropdown`, function(){
+          switchViewports(size);
+          actions.selectSortingDropdown();
+          shouldBeVisible(fetchTestTitle(this), elements.itemSortingDropdown(), viewPortSize(size));
+        });
+  
       })
 
-      it(`Displays logo on viewport [${checkSizes(size)}]`, () => {
-        shouldBeVisible(1, "Logo is displayed", elements.logo(), viewPortSize(size));
-      });
-
-      it(`Displays the top banner on viewport [${checkSizes(size)}]`, () => {
-        shouldBeVisible(1, "Top banner is displayed", elements.topBanner(), viewPortSize(size));
-      });
-
-      it(`Displays search icon on viewport [${checkSizes(size)}]`, () => {
-        shouldBeVisible(1, "Search Icon is displayed", elements.searchIcon(), viewPortSize(size));
-      });
-
-      it(`Displays Account icon on viewport [${checkSizes(size)}]`, () => {
-        shouldBeVisible(1, "User account icon is displayed", elements.accessLink(), viewPortSize(size));
-      });
-
-      it(`Displays shoppingCart icon on navbar viewport [${checkSizes(size)}]`, () => {
-        shouldBeVisible(1, "Shopping Cart is displayed on navbar", elements.shoppingCart(), viewPortSize(size));
-      });
-
-      it(`Shows sorting options with consistent number of items on dropdown [${checkSizes(size)}]`, () => {
-        actions.selectSortingDropdown();
-        shouldBeVisible(1, "shows sorting options and count on product page", elements.itemSortingDropdown(), viewPortSize(size));
-      });
-
-
-      describe(`Displays consistency product items in all viewports [${checkSizes(size)}]`, () => {
-        it(`should show equal number of items in the page in all viewports  [${checkSizes(size)}]`, () => {
-          shouldEqual(6, "All items on the site are displayed across all viewports", elements.gridItems(), viewPortSize(size), 9);
+      describe(`Displays consistency of product items on viewport: [${checkSizes(size)}]`, () => {
+        it(`should show equal number of items in the page`, function(){
+          switchViewports(size);
+          shouldEqual(fetchTestTitle(this), elements.gridItems(), viewPortSize(size), 9);
         });
-        it(`should show countdown consistency across all viewports [${checkSizes(size)}]`, () => {
-          shouldEqual(7, "shows countdown consistency of items across all viewports", elements.countdown(), viewPortSize(size), 3);
+        it(`should show countdown consistency`, function(){
+          switchViewports(size);
+          shouldEqual(fetchTestTitle(this), elements.countdown(), viewPortSize(size), 3);
         });
-        it(`should show discounts consistency across all viewports [${checkSizes(size)}]`, () => {
-          shouldEqual(8, "shows  consistency of discounted items across all viewports", elements.discounts(), viewPortSize(size), 3);
+        it(`should show discounts consistency`, function(){
+          switchViewports(size);
+          shouldEqual(fetchTestTitle(this), elements.discounts(), viewPortSize(size), 3);
         });
-
       });
 
-
-      describe('Shows footer items requiring no interaction', () => {
-        it(`shows language selection option [${checkSizes(size)}]`, () => {
+      describe(`Shows footer items that require no interaction on viewport: [${checkSizes(size)}]`, () => {
+        it(`shows language selection dropdown option`, function(){
+          switchViewports(size);
           actions.clickLanguageSelector();
-          shouldBeVisible(1, "language selector dropdown is present", elements.languageSelector(), viewPortSize(size));
-
+          shouldBeVisible(fetchTestTitle(this), elements.languageSelector(), viewPortSize(size));
         });
-        it(`shows currency selection option [${checkSizes(size)}]`, () => {
+        it(`shows currency selection dropdown option`, function(){
+          switchViewports(size);
           actions.clickCurrencySelector();
-          shouldBeVisible(1, "currency selector dropdown is present", elements.currencySelector(), viewPortSize(size));
-
+          shouldBeVisible(fetchTestTitle(this), elements.currencySelector(), viewPortSize(size));
         });
-        it(`shows copyright information [${checkSizes(size)}]`, () => {
-          shouldBeVisible(1, "copyright information is present", elements.copyrightInformation(), viewPortSize(size));
-
+        it(`shows copyright information`, function(){
+          switchViewports(size);
+          shouldBeVisible(fetchTestTitle(this), elements.copyrightInformation(), viewPortSize(size));
         });
+      });
+
+      describe.skip('color changing elements on hover on viewport', () => {
+       it('shoul show elements that change color on hover', () => {
+        cy.get(elements.wishListIconNavbar()).invoke('show').trigger('mouseenter')
+        .should('have.css', 'color', '#004dda')
+       })
       });
     });
 
   });
 
-  describe('Desktop Viewport Tests (1200X700)', () => {
-    const size = [1200, 700];
+  describe('Laptop Viewport Tests (1200X700)', () => {
+    const size = laptop;
     beforeEach(() => {
       cy.viewport(size[0], size[1]);
     });
-    context('shows sidebar for filtering shoes', () => {
-      it('shows type filtering option on sidebar', () => {
-        shouldBeVisible(1, "type filtering option is present", elements.typeFilter(), viewPortSize(size));
+    describe(`shows sidebar for filtering shoes on viewport: [${checkSizes(size)}]`, function(){
+      
+      it('shows type filtering option on sidebar', function(){
+        shouldBeVisible(fetchTestTitle(this), elements.typeFilter(), viewPortSize(size));
       });
-      it('shows consistent number of items in type filter', () => {
-        shouldEqual(13, "shows  consistency of items in type filter section", elements.typeFilterElements(), viewPortSize(size), 4);
+      it('shows consistent number of items in type filter', function(){
+        shouldEqual(fetchTestTitle(this), elements.typeFilterElements(), viewPortSize(size), 4);
       });
-      it('shows colors filtering option on sidebar', () => {
-        shouldBeVisible(1, "colors filtering option is present", elements.colorsFilter(), viewPortSize(size));
+      it('shows colors filtering option on sidebar', function(){
+        shouldBeVisible(fetchTestTitle(this), elements.colorsFilter(), viewPortSize(size));
       });
-      it('shows consistent number of items in colors filter', () => {
-        shouldEqual(15, "shows  consistency of items in colors filter section", elements.colorsFilterElements(), viewPortSize(size), 5);
+      it('shows consistent number of items in colors filter', function(){
+        shouldEqual(fetchTestTitle(this), elements.colorsFilterElements(), viewPortSize(size), 5);
       });
-      it('shows brands filtering option on sidebar', () => {
-        shouldBeVisible(1, "brands filtering option is present", elements.brandsFilter(), viewPortSize(size));
+      it('shows brands filtering option on sidebar', function(){
+        shouldBeVisible(fetchTestTitle(this), elements.brandsFilter(), viewPortSize(size));
       });
-      it('shows consistent number of items in brands filter', () => {
-        shouldEqual(17, "shows  consistency of items in brands filter section", elements.brandsFilterElements(), viewPortSize(size), 5);
+      it('shows consistent number of items in brands filter', function(){
+        shouldEqual(fetchTestTitle(this), elements.brandsFilterElements(), viewPortSize(size), 5);
       });
-      it('shows price filtering option on sidebar', () => {
-        shouldBeVisible(1, "price filtering option is present", elements.priceFilter(), viewPortSize(size));
+      it('shows price filtering option on sidebar', function(){
+        shouldBeVisible(fetchTestTitle(this), elements.priceFilter(), viewPortSize(size));
       });
-      it('shows consistent number of items in price filter', () => {
-        shouldEqual(19, "shows  consistency of items in colors price section", elements.priceFilterElements(), viewPortSize(size), 4);
+      it('shows consistent number of items in price filter', function(){
+        shouldEqual(fetchTestTitle(this), elements.priceFilterElements(), viewPortSize(size), 4);
       });
     });
 
-    describe('shows shopping utilities on hover of items', () => {
-      it('shows wishlist icon and its tooltip', () => {
+    describe(`shows shopping utilities on hover of items on viewport [${checkSizes(size)}]`, () => {
+      it('shows wishlist icon and its tooltip', function(){
         actions.hoverOnfirstItem();
         expects.wishlistTooltipToBePresent();
-        shouldBeVisible(1, "wishlist icon with its tooltip is present", elements.wishListIcon(), viewPortSize(size));
+        shouldBeVisible(fetchTestTitle(this), elements.wishListIcon(), viewPortSize(size));
       });
-      it('shows cart icon and its tooltip', () => {
+      it('shows cart icon and its tooltip', function(){
         actions.hoverOnfirstItem();
         expects.cartTooltipToBePresent();
-        shouldBeVisible(1, "cart icon with its tooltip is present", elements.cartIcon(), viewPortSize(size));
+        shouldBeVisible(fetchTestTitle(this), elements.cartIcon(), viewPortSize(size));
       });
-      it('shows compare icon and its tooltip', () => {
+      it('shows compare icon and its tooltip', function(){
         actions.hoverOnfirstItem();
         expects.compareTooltipToBePresent();
-        shouldBeVisible(1, "compare icon with its tooltip is present", elements.compareIcon(), viewPortSize(size));
+        shouldBeVisible(fetchTestTitle(this), elements.compareIcon(), viewPortSize(size));
       })
     })
-
-    it('shows search placeholder on the search field', () => {
-      shouldInvokeAttribute(23, "shows placeholder value of the search field", elements.searchInput(),
+    it('shows search placeholder on the search field', function(){
+      shouldInvokeAttribute(fetchTestTitle(this), elements.searchInput(),
         viewPortSize(size), 'placeholder', 'Search over 10,000 shoes!');
-
     });
-    it('shows filter button', () => {
-      shouldBeVisible(1, "filter button is present", elements.filterButton(), viewPortSize(size));
+    it('shows filter button', function(){
+      shouldBeVisible(fetchTestTitle(this), elements.filterButton(), viewPortSize(size));
     });
-    it('shows reset button', () => {
-      shouldBeVisible(1, "reset button is present", elements.resetButton(), viewPortSize(size));
+    it('shows reset button', function(){
+      shouldBeVisible(fetchTestTitle(this), elements.resetButton(), viewPortSize(size));
     });
-
-    it('shows wishlist icon on navbar', () => {
-      shouldBeVisible(1, "wish list icon is present on navbar", elements.wishListIconNavbar(), viewPortSize(size));
+    it('shows wishlist icon on navbar', function(){
+      shouldBeVisible(fetchTestTitle(this), elements.wishListIconNavbar(), viewPortSize(size));
     });
-    it('shows submenu for item categories on navbar', () => {
-      shouldBeVisible(1, "shows submenu for item categories", elements.submenu(), viewPortSize(size));
+    it('shows submenu for item categories on navbar', function(){
+      shouldBeVisible(fetchTestTitle(this), elements.submenu(), viewPortSize(size));
     });
   });
 
   describe('Tablet Viewport Tests (768 * 700)', () => {
-    const size = [768, 700];
+    const size = tablet;
     beforeEach(() => {
       cy.viewport(size[0], size[1]);
     });
-    it('sample test');
+    it(`shows email placeholder`, function(){
+      shouldInvokeAttribute(fetchTestTitle(this), elements.keepInTouchEmail(),
+    viewPortSize(size), 'placeholder', 'Your email');
+    });
   });
 
-  describe('Desktop and Tablet Tests (1200 X 700, 768 X 700)', () => {
-    const viewports = [[1200, 700], [768, 700]];
+  describe('Laptop and Tablet Tests (1200 X 700, 768 X 700)', () => {
+    const viewports = [laptop, tablet];
     viewports.forEach(size => {
-      beforeEach(() => {
-        if (Cypress._.isArray(size)) {
-          cy.viewport(size[0], size[1])
 
-        } else {
-          cy.viewport(size)
-        }
-      });
-      it(`shows cart icon with items ready for checkout [${checkSizes(size)}]`, () => {
-        expects.cartIconToBePresent();
-        shouldBeVisible(1, "cart icon with items", elements.shoppingCartItemCount(), viewPortSize(size));
-      });
+      describe(`Navbar tests on viewport: [${checkSizes(size)}]`, ()=> {
 
-      it(`shows search placeholder on the search field [${checkSizes(size)}]`, () => {
-        shouldInvokeAttribute(29, "shows placeholder value of the search field", elements.searchInput(),
-          viewPortSize(size), 'placeholder', 'Search over 10,000 shoes!');
-      });
-      describe('Shows footer items', () => {
-        it(`shows quick links footer items [${checkSizes(size)}]`, () => {
-          expects.validateQuickLinkItems();
-          shouldBeVisible(1, "footer quick links should be present" , elements.quickLinksDropdown(), viewPortSize(size));
+        it(`shows cart icon with items ready for checkout`, function(){
+          switchViewports(size);
+          expects.cartIconToBePresent();
+          shouldBeVisible(fetchTestTitle(this), elements.shoppingCartItemCount(), viewPortSize(size));
         });
-        it(`shows contacts footer items [${checkSizes(size)}]`, () => {
+        it(`shows search placeholder on the search field`, function(){
+          switchViewports(size);
+          shouldInvokeAttribute(fetchTestTitle(this), elements.searchInput(),
+            viewPortSize(size), 'placeholder', 'Search over 10,000 shoes!');
+        });
+        it(`Displays search icon on navbar`, function(){
+          switchViewports(size);
+          shouldBeVisible(fetchTestTitle(this), elements.searchIcon(), viewPortSize(size));
+        });
+      });
+      
+      describe(`Footer items tests on viewport [${checkSizes(size)}]`, () => {
+        it(`shows quick links footer items`, function(){
+          switchViewports(size);
+          expects.validateQuickLinkItems();
+          shouldBeVisible(fetchTestTitle(this), elements.quickLinksDropdown(), viewPortSize(size));
+        });
+        it(`shows contacts footer items`, function(){
+          switchViewports(size);
           expects.validateContactItems();
-          shouldBeVisible(1, "footer contact details should be present" , elements.contactsDropdown(), viewPortSize(size));
+          shouldBeVisible(fetchTestTitle(this), elements.contactsDropdown(), viewPortSize(size));
         });
   
-        describe('shows keep in touch footer items', () => {
-          beforeEach( () => {
+        describe(`Keep in touch footer items tests on viewport [${checkSizes(size)}]`, () => {
+          beforeEach(() => {
             expects.validateKeepInTouchItems();
-          })
-          it(`shows keep in touch dropdown [${checkSizes(size)}]`, () => {
-            shouldBeVisible(1, "footer keep in touch details should be present" , elements.keepInTouchDropdown(), viewPortSize(size));
           });
-         
-          it(`shows email placeholder [${checkSizes(size)}]`, () => {
-            shouldInvokeAttribute(23, "shows placeholder value of the keep in touch email field", elements.keepInTouchEmail(),
+          it(`shows keep in touch items`, function(){
+            switchViewports(size);
+            shouldBeVisible(fetchTestTitle(this), elements.keepInTouchDropdown(), viewPortSize(size));
+          });
+          it(`shows email placeholder value`, function(){
+            switchViewports(size);
+            shouldInvokeAttribute(fetchTestTitle(this), elements.keepInTouchEmail(),
           viewPortSize(size), 'placeholder', 'Your email');
           });
         });
@@ -214,29 +229,24 @@ context('Cross-Device Elements Test', () => {
   });
 
     describe('Tablet and iphone-x Viewport Tests (768 X 700, 375 X 812)', () => {
-      const viewports = [[768, 700], [375, 812]];
+      const viewports = [tablet, mobile];
       viewports.forEach(size => {
-        beforeEach(() => {
-          if (Cypress._.isArray(size)) {
-            cy.viewport(size[0], size[1])
 
-          } else {
-            cy.viewport(size)
-          }
-        });
-
-        describe('shows shopping utilities', () => {
-          it(`shows wishlist icon and its tooltip [${checkSizes(size)}]`, () => {
+        describe(`Shopping utilities tests on viewport [${checkSizes(size)}]`, () => {
+          it(`shows wishlist icon and its tooltip`, function(){
+            switchViewports(size);
             expects.wishlistTooltipToBePresent();
-            shouldBeVisible(1, "wishlist icon with its tooltip is present", elements.wishListIcon(), viewPortSize(size));
+            shouldBeVisible(fetchTestTitle(this), elements.wishListIcon(), viewPortSize(size));
           });
-          it(`shows cart icon and its tooltip [${checkSizes(size)}]`, () => {
+          it(`shows cart icon and its tooltip`, function(){
+           switchViewports(size);
             expects.cartTooltipToBePresent();
-            shouldBeVisible(1, "cart icon with its tooltip is present", elements.cartIcon(), viewPortSize(size));
+            shouldBeVisible(fetchTestTitle(this), elements.cartIcon(), viewPortSize(size));
           });
-          it(`shows compare icon and its tooltip [${checkSizes(size)}]`, () => {
+          it(`shows compare icon and its tooltip`, function(){
+           switchViewports(size);
             expects.compareTooltipToBePresent();
-            shouldBeVisible(1, "compare icon with its tooltip is present", elements.compareIcon(), viewPortSize(size));
+            shouldBeVisible(fetchTestTitle(this), elements.compareIcon(), viewPortSize(size));
           })
         });
       });
@@ -245,34 +255,40 @@ context('Cross-Device Elements Test', () => {
 
 
   describe('Iphone Viewport Tests (375 * 812)', () => {
-    const size = [375, 812];
+    const size = mobile;
     beforeEach(() => {
       cy.viewport(size[0], size[1]);
     });
 
-    describe('Shows footer items on click', () => {
-      it('shows quick links footer items', () => {
+    context(`Shows navigation search on viewport: [${checkSizes(size)}]`, () => {
+      it(`Displays search icon`, function(){
+        shouldBeVisible(fetchTestTitle(this), elements.searchIconIphone(), viewPortSize(size));
+      });
+    });
+
+    describe(`Footer items tests on click on viewport: [${checkSizes(size)}]`, () => {
+      it('shows quick links footer items', function(){
         actions.clickQuickLinksDropdown();
         expects.validateQuickLinkItems();
-        shouldBeVisible(1, "footer quick links should be present" , elements.quickLinksDropdown(), viewPortSize(size));
+        shouldBeVisible(fetchTestTitle(this), elements.quickLinksDropdown(), viewPortSize(size));
       });
-      it('shows contacts footer items', () => {
+      it('shows contacts footer items', function(){
         actions.clickContactsDropdown();
         expects.validateContactItems();
-        shouldBeVisible(1, "footer contact details should be present" , elements.contactsDropdown(), viewPortSize(size));
+        shouldBeVisible(fetchTestTitle(this), elements.contactsDropdown(), viewPortSize(size));
       });
 
-      describe('shows keep in touch footer items', () => {
+      describe(`Keep in touch footer items tests on viewport: [${checkSizes(size)}]`, () => {
         beforeEach( () => {
           actions.clickKeepInTouchDropdown();
           expects.validateKeepInTouchItems();
         })
-        it('shows keep in touch dropdown', () => {
-          shouldBeVisible(1, "footer keep in touch details should be present" , elements.keepInTouchDropdown(), viewPortSize(size));
+        it('shows keep in touch dropdown', function(){
+          shouldBeVisible(fetchTestTitle(this), elements.keepInTouchDropdown(), viewPortSize(size));
         });
        
-        it('shows email placeholder', () => {
-          shouldInvokeAttribute(23, "shows placeholder value of the keep in touch email field", elements.keepInTouchEmail(),
+        it('shows email placeholder', function(){
+          shouldInvokeAttribute(fetchTestTitle(this), elements.keepInTouchEmail(),
         viewPortSize(size), 'placeholder', 'Your email');
         });
       });
