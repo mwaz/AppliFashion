@@ -18,7 +18,7 @@ const testTask = 3;
 
 context('Product Experience', () => {
   beforeEach(() => {
-      cy.visit('https://demo.applitools.com/gridHackathonV1.html')
+      actions.goToV1AppUrl();
   });
 
   describe('All Viewport tests', () => {

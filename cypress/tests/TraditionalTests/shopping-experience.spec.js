@@ -18,7 +18,7 @@ import {
   
   context('Product Experience', () => {
     beforeEach(() => {
-        cy.visit('https://demo.applitools.com/gridHackathonV1.html')
+        actions.goToV1AppUrl();
     });
     afterEach(() => {
         actions.resetFilter();

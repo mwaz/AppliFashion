@@ -23,7 +23,7 @@ const { laptop, tablet, mobile } = viewports;
 context('Cross-Device Elements Test', () => {
 
   beforeEach(() => {
-    cy.visit('https://demo.applitools.com/gridHackathonV1.html')
+    actions.goToV1AppUrl();
   });
 
   describe('All Viewport Tests', () => {
