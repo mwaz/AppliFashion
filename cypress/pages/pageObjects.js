@@ -76,6 +76,12 @@ productPageShoeDiscount: () => "#discount",
 };
 
 const actions = {
+    goToV1AppUrl() {
+        cy.visit(`https://demo.applitools.com/gridHackathonV1.html`)
+    },
+    goToV2AppUrl() {
+        cy.visit(`https://demo.applitools.com/gridHackathonV2.html`)
+    },
     clickCurrencySelector() {
         cy.get(elements.currencySelector()).click();
 
