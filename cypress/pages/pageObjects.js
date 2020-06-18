@@ -115,7 +115,7 @@ const actions = {
         cy.get(elements.colorsFilterBlack()).click();
     },
     clickZeroToFiftyPriceFilter(){
-        cy.get(elements.priceFilterZeroToFifty()).click();
+        cy.get(elements.priceFilterZeroToFifty()).scrollIntoView().click();
     },
     clickFilterButton(){
         cy.get(elements.filterButton()).click();
@@ -174,7 +174,7 @@ const expects = {
     },
     priceFilterIsVisible(){
         cy.get(elements.priceFilter()).should('be.visible');
-        cy.get(elements.priceFilterZeroToFifty()).should('be.visible');
+        cy.get(elements.priceFilterZeroToFifty()).scrollIntoView().should('be.visible');
         cy.get(elements.priceFilterFiftyToOneHundred()).should('be.visible');
         cy.get(elements.priceFilterOneHundredToOneFifty()).should('be.visible');
         cy.get(elements.priceFilterOneFiftyToFiveHundred()).should('be.visible');
