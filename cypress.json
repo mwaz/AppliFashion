@@ -1,15 +1,16 @@
 {
-    "integrationFolder": "cypress/tests",
-    "numTestsKeptInMemory": 50,
-    "ignoreTestFiles": [
-        "**/__snapshots__/*",
-        "**/__image_snapshots__/*"
-      ],
-      "video": false,
-      "chromeWebSecurity": true,
-      "firefoxGcInterval": {
-        "runMode": null,
-        "openMode": null
-      },
-      "watchForFileChanges": true
+  "integrationFolder": "cypress/tests",
+  "numTestsKeptInMemory": 50,
+  "ignoreTestFiles": [
+    "**/__snapshots__/*",
+    "**/__image_snapshots__/*"
+  ],
+  "video": false,
+  "chromeWebSecurity": true,
+  "firefoxGcInterval": {
+    "runMode": null,
+    "openMode": null
+  },
+  "watchForFileChanges": true,
+  "projectId": "ytsd8o"
 }
