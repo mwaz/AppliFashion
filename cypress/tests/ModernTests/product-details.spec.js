@@ -1,18 +1,15 @@
 /// <reference types="@applitools/eyes-cypress" />
 
-import { actions, elements, expects } from '../../pages/pageObjects';
+import { actions, elements } from '../../pages/pageObjects';
 import {
     checkEyesWindow,
-    switchViewports,
 } from '../../utils/utilityFunctions';
 import {
-    viewportDimensions,
     iphoneViewport,
     tabletViewports,
     desktopViewports
 } from '../../utils/viewports';
 
-const { tablet, mobile } = viewportDimensions;
 
 context('Cross-Device Elements Test', () => {
 
@@ -23,10 +20,12 @@ context('Cross-Device Elements Test', () => {
     describe('Task1: All Viewport Verification Tests', () => {
         beforeEach(() => {
             cy.eyesOpen({});
-        })
+        });
+
         afterEach(() => {
             cy.eyesClose();
         });
+
         describe(`Viewport verification tests`, function () {
 
             it(`Task1: Main Header`, function () {
@@ -59,14 +58,14 @@ context('Cross-Device Elements Test', () => {
     describe('Task 1: Desktop Viewport Tests', () => {
         beforeEach(() => {
             cy.eyesOpen({
-                browser: [
-                    ...desktopViewports
-                ],
+                browser: [ ...desktopViewports ],
             });
-        })
+        });
+
         afterEach(() => {
             cy.eyesClose();
         });
+
         it('Task 1: Shoes Filter Section', () => {
             checkEyesWindow(elements.shoesFilterSection());
         });
@@ -77,14 +76,14 @@ context('Cross-Device Elements Test', () => {
         beforeEach(() => {
             cy.viewport(768, 700);
             cy.eyesOpen({
-                browser: [
-                    ...tabletViewports
-                ],
+                browser: [ ...tabletViewports ],
             });
-        })
+        });
+
         afterEach(() => {
             cy.eyesClose();
         });
+
         it('Task 1: Shoes Filter Section', () => {
             actions.openFilterNavigationSideBar();
             checkEyesWindow(elements.shoesFilterSection());
@@ -94,22 +93,18 @@ context('Cross-Device Elements Test', () => {
     describe('Task 1 Mobile Viewport Tests', () => {
         beforeEach(() => {
             cy.eyesOpen({
-                browser: [
-                    ...iphoneViewport
-                ],
+                browser: [ ...iphoneViewport ],
             });
             cy.viewport('iphone-x');
-        })
+        });
+
         afterEach(() => {
             cy.eyesClose();
         });
+
         it('Task 1: Shoes Filter Section', () => {
             actions.openFilterNavigationSideBar();
             checkEyesWindow(elements.shoesFilterSection());
         });
-
     });
-
-
-
 });
