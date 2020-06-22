@@ -248,6 +248,7 @@ context('Cross-Device Elements Test', () => {
             expects.compareTooltipToBePresent();
             shouldBeVisible(fetchTestTitle(this), elements.compareIcon(), viewPortSize(size));
           })
+          it('shows sidebar filter', () => {})
         });
       });
     });
