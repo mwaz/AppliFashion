@@ -1,6 +1,11 @@
 'use strict'
 
 const elements = {
+mainHeader: () => "#DIV__mainheader__3",
+mainNavigation: () => "#DIV__mainnavinn__36",
+shoesDisplaySection: () => "#DIV__collg__186",
+mainFooter: () => "#DIV__container__418",
+shoesFilterSection: () => "#filter_col",
 topBanner: () => "#DIV__topbanner__187",
 submenu: () => "#UL____21",
 searchIconIphone: () => "#A__btnsearchm__59",
