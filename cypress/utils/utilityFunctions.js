@@ -158,6 +158,18 @@ function switchViewports(size){
   return Cypress._.isArray(size) ? cy.viewport(size[0], size[1]): cy.viewport(size);
 }
 
+function checkEyesWindow(selectorElement, target = 'region' , type ='css') {
+  cy.eyesCheckWindow({
+    target,
+    selector: {
+        type,
+        selector: selectorElement
+    }
+});
+}
+
+
+
 export default {
 shouldBeVisible,
 shouldEqual,
@@ -166,5 +178,7 @@ hackathonReporter,
 viewPortSize,
 checkSizes,
 fetchTestTitle,
-switchViewports
+switchViewports,
+checkEyesWindow,
+
 }
