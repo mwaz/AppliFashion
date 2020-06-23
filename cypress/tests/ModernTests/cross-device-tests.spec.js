@@ -1,110 +1,66 @@
 /// <reference types="@applitools/eyes-cypress" />
 
+import * as config from '../../../applitools.config';
 import { actions, elements } from '../../pages/pageObjects';
 import {
     checkEyesWindow,
 } from '../../utils/utilityFunctions';
-import {
-    iphoneViewport,
-    tabletViewports,
-    desktopViewports
-} from '../../utils/viewports';
 
-
-context('Cross-Device Elements Test', () => {
+context('Cross-Device Elements Tests', () => {
 
     beforeEach(() => {
         actions.goToV1AppUrl();
     });
 
-    describe('Task1: All Viewport Verification Tests', () => {
+    describe('Task 1: All Viewports Section Verification Tests', () => {
         beforeEach(() => {
-            cy.eyesOpen({});
+            cy.viewport(800, 600);
+            cy.eyesOpen();
         });
 
         afterEach(() => {
             cy.eyesClose();
         });
-
-        describe(`Viewport verification tests`, function () {
-
-            it(`Task1: Main Header`, function () {
-                checkEyesWindow(elements.mainHeader());
-            });
-            it(`Task1: Main Navigation`, function () {
-                checkEyesWindow(elements.mainNavigation());
-            });
-
-            it(`Task1: Shoes Section`, function () {
-                checkEyesWindow(elements.shoesDisplaySection());
-            });
-            it(`Task1: check foooter items`, function () {
-                checkEyesWindow(elements.mainFooter());
-            });
-
-
+        it(`Task 1: shows main header`, function () {
+            checkEyesWindow(elements.mainHeader());
+        });
+        it(`Task 1: shows navigation bar`, function () {
+            checkEyesWindow(elements.mainNavigation());
         });
 
-        // describe.skip('color changing elements on hover on viewport', () => {
-        //  it('shoul show elements that change color on hover', () => {
-        //   cy.get(elements.wishListIconNavbar()).invoke('show').trigger('mouseenter')
-        //   .should('have.css', 'color', '#004dda')
-        //  })
-        // });
-
-
-    });
-
-    describe('Task 1: Desktop Viewport Tests', () => {
-        beforeEach(() => {
-            cy.eyesOpen({
-                browser: [ ...desktopViewports ],
-            });
+        it(`Task 1: shows shoes section`, function () {
+            checkEyesWindow(elements.shoesDisplaySection());
         });
 
-        afterEach(() => {
-            cy.eyesClose();
+        it(`Task 1: shows foooter items`, function () {
+            checkEyesWindow(elements.mainFooter());
         });
 
-        it('Task 1: Shoes Filter Section', () => {
-            checkEyesWindow(elements.shoesFilterSection());
-        });
-
-    });
-
-    describe('Task 1: Tablet Viewport Tests', () => {
-        beforeEach(() => {
-            cy.viewport(768, 700);
-            cy.eyesOpen({
-                browser: [ ...tabletViewports ],
-            });
-        });
-
-        afterEach(() => {
-            cy.eyesClose();
-        });
-
-        it('Task 1: Shoes Filter Section', () => {
+        it('Task 1: shows shoes filter section', () => {
             actions.openFilterNavigationSideBar();
             checkEyesWindow(elements.shoesFilterSection());
         });
+
     });
 
-    describe('Task 1 Mobile Viewport Tests', () => {
+    describe('Task 1: Mobile Viewport Test', () => {
         beforeEach(() => {
-            cy.eyesOpen({
-                browser: [ ...iphoneViewport ],
-            });
             cy.viewport('iphone-x');
+            cy.eyesOpen({
+                // use iphone-x browser
+                browser: [config.browser[6]], 
+            });
         });
 
         afterEach(() => {
             cy.eyesClose();
         });
 
-        it('Task 1: Shoes Filter Section', () => {
-            actions.openFilterNavigationSideBar();
-            checkEyesWindow(elements.shoesFilterSection());
+        it('Task 1: shows footer dropdown content', () => {
+            actions.clickQuickLinksDropdown();
+            actions.clickContactsDropdown();
+            actions.clickKeepInTouchDropdown();
+            checkEyesWindow(elements.mainFooter());
         });
     });
 });
