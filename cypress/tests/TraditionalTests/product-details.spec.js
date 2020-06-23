@@ -25,7 +25,7 @@ context('Product Experience', () => {
       const viewports = [tablet, mobile, laptop];
       viewports.forEach((size) => {
           
-          describe(`Filter for black shoes [${checkSizes(size)}]`, () => {
+          describe(`Naviagate to product page [${checkSizes(size)}]`, () => {
               it(`can click the first shoe image and validate details`, function(){
                 switchViewports(size)
                   actions.clickFirstBlackShoe();
@@ -33,7 +33,6 @@ context('Product Experience', () => {
                   expects.validateProductImageUrl({productId : 1});
                   shouldBeVisible(fetchTestTitle(this), elements.productPageShoeImage(), viewPortSize(size), testTask);
               });
-             
           })
       });
   });

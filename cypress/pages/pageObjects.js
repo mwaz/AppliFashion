@@ -17,6 +17,7 @@ shoppingCart: () => "#A__cartbt__49",
 shoppingCartItemCount: () => "#STRONG____50", 
 logo: () => "#A____8",
 gridItems: () => ".grid_item",
+productGrid: () => "#product_grid",
 countdown: () => ".countdown",
 discounts: () => ".ribbon",
 currencySelector: () => "#DIV__styledsele__466",
@@ -77,6 +78,7 @@ productPageShoeCartButton: () => "#A__btn__114",
 productPageShoeOldPrice: () => "#new_price",
 productPageShoeNewPrice: () => "#old_price",
 productPageShoeDiscount: () => "#discount",
+firstShoeProductPage: () => "#MAIN__bggray__64"
 
 };
 

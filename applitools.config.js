@@ -16,4 +16,3 @@ module.exports = {
     appName: 'applifashion-hackathon',
     showLogs: true,
 }
-// 97wVHf9rSmxt5oSRhGb100101I07mx6RJUEJpEIQsv5cxuYU110
