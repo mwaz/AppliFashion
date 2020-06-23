@@ -1,110 +1,23 @@
 /// <reference types="@applitools/eyes-cypress" />
 
-import { actions, elements } from '../../pages/pageObjects';
-import {
-    checkEyesWindow,
-} from '../../utils/utilityFunctions';
-import {
-    iphoneViewport,
-    tabletViewports,
-    desktopViewports
-} from '../../utils/viewports';
+import { actions, expects } from '../../pages/pageObjects';
 
 
-context('Cross-Device Elements Test', () => {
+context('Product Details test', () => {
 
     beforeEach(() => {
+        cy.viewport(800, 600);
         actions.goToV1AppUrl();
+        cy.eyesOpen();
     });
 
-    describe('Task1: All Viewport Verification Tests', () => {
-        beforeEach(() => {
-            cy.eyesOpen({});
-        });
-
-        afterEach(() => {
-            cy.eyesClose();
-        });
-
-        describe(`Viewport verification tests`, function () {
-
-            it(`Task1: Main Header`, function () {
-                checkEyesWindow(elements.mainHeader());
-            });
-            it(`Task1: Main Navigation`, function () {
-                checkEyesWindow(elements.mainNavigation());
-            });
-
-            it(`Task1: Shoes Section`, function () {
-                checkEyesWindow(elements.shoesDisplaySection());
-            });
-            it(`Task1: check foooter items`, function () {
-                checkEyesWindow(elements.mainFooter());
-            });
-
-
-        });
-
-        // describe.skip('color changing elements on hover on viewport', () => {
-        //  it('shoul show elements that change color on hover', () => {
-        //   cy.get(elements.wishListIconNavbar()).invoke('show').trigger('mouseenter')
-        //   .should('have.css', 'color', '#004dda')
-        //  })
-        // });
-
-
+    afterEach(() => {
+        cy.eyesClose();
     });
 
-    describe('Task 1: Desktop Viewport Tests', () => {
-        beforeEach(() => {
-            cy.eyesOpen({
-                browser: [ ...desktopViewports ],
-            });
-        });
-
-        afterEach(() => {
-            cy.eyesClose();
-        });
-
-        it('Task 1: Shoes Filter Section', () => {
-            checkEyesWindow(elements.shoesFilterSection());
-        });
-
-    });
-
-    describe('Task 1: Tablet Viewport Tests', () => {
-        beforeEach(() => {
-            cy.viewport(768, 700);
-            cy.eyesOpen({
-                browser: [ ...tabletViewports ],
-            });
-        });
-
-        afterEach(() => {
-            cy.eyesClose();
-        });
-
-        it('Task 1: Shoes Filter Section', () => {
-            actions.openFilterNavigationSideBar();
-            checkEyesWindow(elements.shoesFilterSection());
-        });
-    });
-
-    describe('Task 1 Mobile Viewport Tests', () => {
-        beforeEach(() => {
-            cy.eyesOpen({
-                browser: [ ...iphoneViewport ],
-            });
-            cy.viewport('iphone-x');
-        });
-
-        afterEach(() => {
-            cy.eyesClose();
-        });
-
-        it('Task 1: Shoes Filter Section', () => {
-            actions.openFilterNavigationSideBar();
-            checkEyesWindow(elements.shoesFilterSection());
-        });
+    it(`Task 3: can click the first shoe image and validate details`, function () {
+        actions.clickFirstBlackShoe();
+        expects.validateProductImageUrl({ productId: 1 });
+        cy.eyesCheckWindow('First Shoe Product Page')
     });
 });
