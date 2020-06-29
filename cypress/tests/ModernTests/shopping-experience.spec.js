@@ -9,7 +9,7 @@ context('Filter Results', () => {
 
     beforeEach(() => {
         cy.viewport(800, 600);
-        actions.goToV1AppUrl();
+        actions.goToV2AppUrl();
         cy.eyesOpen();
     });
 
