@@ -7,7 +7,7 @@ context('Product Details test', () => {
 
     beforeEach(() => {
         cy.viewport(800, 600);
-        actions.goToV1AppUrl();
+        actions.goToV2AppUrl();
         cy.eyesOpen();
     });
 
@@ -15,7 +15,7 @@ context('Product Details test', () => {
         cy.eyesClose();
     });
 
-    it(`Task 3: can click the first shoe image and validate details`, function () {
+    it(`Task 3`, function () {
         actions.clickFirstBlackShoe();
         expects.validateProductImageUrl({ productId: 1 });
         cy.eyesCheckWindow('First Shoe Product Page')
