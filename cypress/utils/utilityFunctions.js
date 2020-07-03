@@ -27,6 +27,7 @@ function hackathonReporter(task, testName, domId, viewport = "660X1000", device,
       console.log(e, 'Data was not appended');
     
   }
+  assertElementExists(domId)
   return testState;
 }
 
@@ -42,13 +43,25 @@ function hackathonReporter(task, testName, domId, viewport = "660X1000", device,
  * @param {string} viewport   dimensions of the device under test 
  */
 function shouldBeVisible(testName, domId, viewport, task = 1) {
-  try {
-   cy.get(domId).should('be.visible');
-  } 
-  catch (e) {
-  }
+  let status = 'fail'
 
-  return hackathonReporter(task, testName, domId, viewport, checkDevice(viewport));
+  return cy.get('body').each( async elem => {
+    if ( Cypress.$(elem).find(`${domId}`).length) {
+        status = 'pass';
+        cy.get(domId).should('be.visible');
+        hackathonReporter(task, testName, domId, viewport, checkDevice(viewport), status);
+    }
+    
+    else {
+      status = 'fail';
+      hackathonReporter(task, testName, domId, viewport, checkDevice(viewport), status);
+   }
+});
+
+}
+
+function assertElementExists(domId){
+  cy.get(domId).should('be.visible');
 }
 
 
@@ -65,15 +78,19 @@ function shouldBeVisible(testName, domId, viewport, task = 1) {
  * @returns                    hackathonReporter method to print the test results on a .txt file
  */
 function shouldEqual(testName, domId, viewport, elementLength, task = 1) {
-  let displayed = true;
-  try {
-    cy.get(domId).should($element => {
-      expect($element).to.have.length(elementLength)
-    });
-  } catch (e) {
-    displayed = false;
-  }
-  return hackathonReporter(task, testName, domId, displayed, viewport, checkDevice(viewport));
+  let status 
+
+  return cy.get('body').each( async elem => {
+    if ( Cypress.$(elem).find(`${domId}`).length === elementLength) {
+        status = 'pass';
+        verifyElementLength(domId, elementLength)
+        hackathonReporter(task, testName, domId, viewport, checkDevice(viewport), status);
+    }
+    else {
+      status = 'fail';
+      hackathonReporter(task, testName, domId, viewport, checkDevice(viewport), status);
+   }
+});
 }
 
 /**
@@ -88,14 +105,22 @@ function shouldEqual(testName, domId, viewport, elementLength, task = 1) {
  * @param {string} attrName  the attributes of the element to be validated e.g placeholder
  * @param {string} attrValue expected value of the attribute 
  */
-function shouldInvokeAttribute(testName, domId, viewport, attrName, attrValue, task = 1) {
-  let displayed;
-  try {
-    cy.get(domId).invoke('attr', `${attrName}`).should('contain', `${attrValue}`) ? displayed = true : displayed = false;
-  } catch (e) {
-  }
-  return hackathonReporter(task, testName, domId, displayed, viewport, checkDevice(viewport));
+function shouldInvokeAttribute(testName, domId, viewport, attrValue, task = 1, attrName='placeholder',) {
+  let status;
+  return cy.get('body').each( async elem => {
+    if ( Cypress.$(elem).find(domId).attr('placeholder', (i, value) => {
+      value === attrValue ? status = 'pass' : status = 'fail'
+    })) {
+      
+      hackathonReporter(task, testName, domId, viewport, checkDevice(viewport), status);
 
+    }
+    else {
+      status = 'fail';
+      verifyAttributeInvocation(domId, attrValue, attrName)
+      hackathonReporter(task, testName, domId, viewport, checkDevice(viewport), status);
+   }
+});
 }
 
 /**
@@ -222,9 +247,19 @@ function checkTestState (ctx) {
   else return currState = 'Pass'
 }
 
+function verifyElementLength(domId, elementLength){
+  cy.get(domId).should($element => {
+    expect($element).to.have.length(elementLength)
+  });
+}
+
+function verifyAttributeInvocation (domId, attrValue, attrName='placeholder'){
+  cy.get(domId).invoke('attr', `${attrName}`).should('contain', `${attrValue}`)
+}
 
 export default {
   shouldBeVisible,
+  assertElementExists,
   shouldEqual,
   shouldInvokeAttribute,
   hackathonReporter,
@@ -233,5 +268,7 @@ export default {
   fetchTestTitle,
   switchViewports,
   checkEyesWindow,
-  checkTestState
+  checkTestState,
+  verifyElementLength,
+  verifyAttributeInvocation
 }
