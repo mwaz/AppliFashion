@@ -5,7 +5,7 @@ import { actions } from '../../pagesV1/pageObjects';
 context('Cross-Device Elements Tests', () => {
 
     beforeEach(() => {
-        actions.goToV2AppUrl();
+        actions.goToV1AppUrl();
     });
 
     beforeEach(() => {

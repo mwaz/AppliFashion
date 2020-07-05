@@ -7,7 +7,7 @@ context('Product Details test', () => {
 
     beforeEach(() => {
         cy.viewport(800, 600);
-        actions.goToV2AppUrl();
+        actions.goToV1AppUrl();
         cy.eyesOpen();
     });
 
