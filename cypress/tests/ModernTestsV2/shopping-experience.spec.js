@@ -1,6 +1,6 @@
 /// <reference types="@applitools/eyes-cypress" />
 
-import { actions, elements, expects } from '../../pagesV1/pageObjects';
+import { actions, elements, expects } from '../../pagesV2/pageObjects';
 import {
     checkEyesWindow,
 } from '../../utils/utilityFunctions';

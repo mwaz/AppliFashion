@@ -1,6 +1,6 @@
 /// <reference types="@applitools/eyes-cypress" />
 
-import { actions } from '../../pagesV1/pageObjects';
+import { actions } from '../../pagesV2/pageObjects';
 
 context('Cross-Device Elements Tests', () => {
 

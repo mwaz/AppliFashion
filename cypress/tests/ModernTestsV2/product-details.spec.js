@@ -1,6 +1,6 @@
 /// <reference types="@applitools/eyes-cypress" />
 
-import { actions, expects } from '../../pagesV1/pageObjects';
+import { actions, expects } from '../../pagesV2/pageObjects';
 
 
 context('Product Details test', () => {
