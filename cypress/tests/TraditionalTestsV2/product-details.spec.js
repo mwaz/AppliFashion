@@ -17,7 +17,7 @@ const viewports = {
 const { laptop, tablet, mobile } = viewports;
 const testTask = 3;
 
-context('Product Experience', () => {
+context('Product Details', () => {
   beforeEach(() => {
       actions.goToV2AppUrl();
   });
