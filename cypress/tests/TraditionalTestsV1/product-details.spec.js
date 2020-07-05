@@ -30,6 +30,7 @@ context('Product Experience', () => {
                 switchViewports(size)
                   actions.clickFirstBlackShoe();
                   expects.validateProductImageElements()
+                  expects.validateCssProperies(elements.productPageShoeOldPrice(), 'text-decoration', 'line-through solid rgb(153, 153, 153)');
                   expects.validateProductImageUrl({productId : 1});
                   shouldBeVisible(fetchTestTitle(this), elements.productPageShoeImage(), viewPortSize(size), testTask);
               });
