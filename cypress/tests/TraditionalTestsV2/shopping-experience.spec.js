@@ -4,9 +4,10 @@ import {
     viewPortSize,
     checkSizes,
     switchViewports,
-    fetchTestTitle
+    fetchTestTitle,
+    checkDevice
   } from '../../utils/utilityFunctions';
-  import { actions, elements, expects } from '../../pagesV1/pageObjects';
+  import { actions, elements, expects } from '../../pagesV2/pageObjects';
   
   const viewports = {
     laptop: [1200, 700],
@@ -16,19 +17,27 @@ import {
   const { laptop, tablet, mobile } = viewports;
   const testTask = 2;
   
-  context('Product Experience', () => {
+context('Shopping Experience', () => {
     beforeEach(() => {
-        actions.goToV1AppUrl();
+        actions.goToV2AppUrl();
     });
-    afterEach(() => {
-        actions.resetFilter();
-    });
-  
+
+    afterEach(function () {
+        if (this.currentTest.state === 'failed') {
+            const viewport = `${this.currentTest.commands[2].viewportWidth} X ${this.currentTest.commands[2].viewportHeight}`
+            cy.writeFile(`Traditional-V2-TestResults.txt`, `"Task: ${testTask}, Test Name: ${this.currentTest.title}, DOM Id: ${this.currentTest.commands[2].message}, Browser: ${Cypress.env('browser')}, Viewport: ${viewport}, Device: ${checkDevice(viewport)}, Status: ${this.currentTest.state}\n`, { flag: "a+" })
+        }
+    })
+
     describe('Desktop Tests', () => {
-  
         beforeEach(() => {
             cy.viewport(laptop[0], laptop[1])
         });
+
+        afterEach(() => {
+            actions.resetFilter();
+        });
+
         describe('Filter for black shoes on viewport (1200 X 700)', () => {
             it('can filter all black shoes based on color', function(){
                 expects.colorFilterIsVisible();
@@ -67,7 +76,6 @@ import {
                     actions.clickZeroToFiftyPriceFilter();
                     actions.clickFilterButton();
                     shouldEqual(fetchTestTitle(this), elements.gridItems(), viewPortSize(size), 1, testTask);
-  
                 });
             })
         });
