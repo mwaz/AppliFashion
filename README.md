@@ -1,5 +1,7 @@
 Applitools is the  proud sponsor of this hackathon
 
+[Click Here to view Eyes Hackathon Batch Results](https://eyes.applitools.com/app/test-results/00000251808323921370/?accountId=-cFrfR79EU_n8WtKJXaQnQ~~)
+
 ![applitools](https://user-images.githubusercontent.com/10160787/86256908-886abc00-bbc1-11ea-914c-c008705a071a.jpeg)
 
 
@@ -42,6 +44,7 @@ beforeEach(() => {
 
 ```
 
+
 **Installation Process (MACOS)**
 ---
 
@@ -75,6 +78,11 @@ test:ultragrid:v1
 ```
 test:ultragrid:v2
 ```
+
+**Viewing Results of the UltraGrid Batch**
+---
+
+[View the UltraGrid Eyes Hackathon Batch Results Here](https://eyes.applitools.com/app/test-results/00000251808323921370/?accountId=-cFrfR79EU_n8WtKJXaQnQ~~)
 
 
 **Running Traditional Tests Version 1**
