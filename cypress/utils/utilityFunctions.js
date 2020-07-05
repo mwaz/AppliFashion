@@ -1,5 +1,5 @@
 
-const filepath = `Traditional-V1-TestResults.txt`;
+const filepath = `Traditional-V2-TestResults.txt`;
 const browser = Cypress.env('browser');
 
 /**
@@ -20,14 +20,12 @@ const browser = Cypress.env('browser');
 function hackathonReporter(task, testName, domId, viewport = "660X1000", device, testState) {
   try {
     cy.writeFile(`${filepath}`, `"Task: ${task}, Test Name: ${testName}, DOM Id: ${domId}, Browser: ${browser}, Viewport: ${viewport}, Device: ${device}, Status: ${testState}\n`, { flag: "a+" })
-    
   }
   catch {
     (e) => 
       console.log(e, 'Data was not appended');
     
   }
-  assertElementExists(domId)
   return testState;
 }
 
@@ -43,7 +41,7 @@ function hackathonReporter(task, testName, domId, viewport = "660X1000", device,
  * @param {string} viewport   dimensions of the device under test 
  */
 function shouldBeVisible(testName, domId, viewport, task = 1) {
-  let status = 'fail'
+  let status = 'failed'
 
   return cy.get('body').each( async elem => {
     if ( Cypress.$(elem).find(`${domId}`).length) {
@@ -51,19 +49,28 @@ function shouldBeVisible(testName, domId, viewport, task = 1) {
         cy.get(domId).should('be.visible');
         hackathonReporter(task, testName, domId, viewport, checkDevice(viewport), status);
     }
-    
     else {
-      status = 'fail';
+      status = 'failed';
       hackathonReporter(task, testName, domId, viewport, checkDevice(viewport), status);
    }
 });
-
 }
 
-function assertElementExists(domId){
-  cy.get(domId).should('be.visible');
+/**
+ * A method to assert that an element is not visible on navigation or interaction
+ * 
+ * Example shouldBeVisible(1, 'a sample test', '#sampleID', 'iphone-x');
+ * 
+ * @param {int} task          1, 2 or 3
+ * @param {string} testName   something meaningful 
+ * @param {string} domId      DOM ID of the element
+ * @param {string} viewport   dimensions of the device under test 
+ */
+function shouldNotBeVisible(testName, domId, viewport, task = 1) {
+  const status = 'pass';
+  cy.get(domId).should('not.be.visible');
+return hackathonReporter(task, testName, domId, viewport, checkDevice(viewport), status);
 }
-
 
 /**
  * A method to assert that an element is visible on navigation or interaction
@@ -81,13 +88,14 @@ function shouldEqual(testName, domId, viewport, elementLength, task = 1) {
   let status 
 
   return cy.get('body').each( async elem => {
-    if ( Cypress.$(elem).find(`${domId}`).length === elementLength) {
+    if ( Cypress.$(elem).find(`${domId}`)) {
         status = 'pass';
         verifyElementLength(domId, elementLength)
         hackathonReporter(task, testName, domId, viewport, checkDevice(viewport), status);
     }
     else {
-      status = 'fail';
+      status = 'failed';
+      verifyElementLength(domId, elementLength)
       hackathonReporter(task, testName, domId, viewport, checkDevice(viewport), status);
    }
 });
@@ -109,14 +117,13 @@ function shouldInvokeAttribute(testName, domId, viewport, attrValue, task = 1, a
   let status;
   return cy.get('body').each( async elem => {
     if ( Cypress.$(elem).find(domId).attr('placeholder', (i, value) => {
-      value === attrValue ? status = 'pass' : status = 'fail'
+      value === attrValue ? status = 'pass' : status = 'failed'
     })) {
-      
+      verifyAttributeInvocation(domId, attrValue, attrName)
       hackathonReporter(task, testName, domId, viewport, checkDevice(viewport), status);
-
     }
     else {
-      status = 'fail';
+      status = 'failed';
       verifyAttributeInvocation(domId, attrValue, attrName)
       hackathonReporter(task, testName, domId, viewport, checkDevice(viewport), status);
    }
@@ -237,29 +244,30 @@ function checkEyesWindow(selectorElement, target = 'region', type = 'css') {
   });
 }
 
-
-function checkTestState (ctx) {
-  let currState;
-  if (ctx.currentTest && ctx.currentTest.state === 'failed') {
-    console.log(currState, 'this state');
-    return currState = 'Fail'
-  }
-  else return currState = 'Pass'
-}
-
+/**
+ * Method to validate that element length matches expected length
+ * 
+ * @param {String} domId 
+ * @param {Int} elementLength 
+ */
 function verifyElementLength(domId, elementLength){
   cy.get(domId).should($element => {
     expect($element).to.have.length(elementLength)
   });
 }
 
+/**
+ * Method to validate that an attribute exists before invocation
+ * @param {String} domId 
+ * @param {String} attrValue 
+ * @param {String} attrName 
+ */
 function verifyAttributeInvocation (domId, attrValue, attrName='placeholder'){
   cy.get(domId).invoke('attr', `${attrName}`).should('contain', `${attrValue}`)
 }
 
 export default {
   shouldBeVisible,
-  assertElementExists,
   shouldEqual,
   shouldInvokeAttribute,
   hackathonReporter,
@@ -268,7 +276,10 @@ export default {
   fetchTestTitle,
   switchViewports,
   checkEyesWindow,
-  checkTestState,
   verifyElementLength,
-  verifyAttributeInvocation
+  verifyAttributeInvocation,
+  checkDevice,
+  shouldNotBeVisible,
+  browser,
+  filepath
 }
