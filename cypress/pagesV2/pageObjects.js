@@ -6,7 +6,7 @@ mainNavigation: () => "#DIV__mainnavinn__36",
 shoesDisplaySection: () => "#DIV__collg__186",
 mainFooter: () => "#DIV__container__418",
 shoesFilterSection: () => "#filter_col",
-topBanner: () => "#DIV__topbanner__187",
+topBanner: () => "#DIV__topbanner__188",
 submenu: () => "#UL____21",
 searchIconIphone: () => "#A__btnsearchm__59",
 searchIcon: () => "#BUTTONsubmit____43",
@@ -20,9 +20,9 @@ gridItems: () => ".grid_item",
 productGrid: () => "#product_grid",
 countdown: () => ".countdown",
 discounts: () => ".ribbon",
-currencySelector: () => "#DIV__styledsele__466",
-languageSelector: () => "#DIV__styledsele__459",
-copyrightInformation: () => "#DIV__collg__470",
+currencySelector: () => "#DIV__styledsele__467",
+languageSelector: () => "#DIV__styledsele__460",
+copyrightInformation: () => "#DIV__collg__471",
 typeFilter: () => "#A__opened__75",
 colorsFilter: () => "#A__opened__100",
 colorsFilterBlack: () => "#SPAN__checkmark__107",
@@ -44,27 +44,27 @@ firstBlackShoeImage: () => "#product_1",
 wishListIcon: () => "#I__tiheart__225",
 cartIcon: () => "#I__tishopping__233",
 compareIcon: () => "#I__ticontrols__229",
-wishListParent:  () => "li#LI____223",
+wishListParent:  () => "li#LI____224",
 wishListIconTooltip: () => "#A__tooltip__224",
 compareParent:  () => "li#LI____227",
-compareIconTooltip: () => "#A__tooltip__228",
+compareIconTooltip: () => "#A__tooltip__229",
 cartIconParent:  () => "li#LI____231",
-cartIconTooltip: () => "#A__tooltip__232",
+cartIconTooltip: () => "#A__tooltip__233",
 filterButton: () => "#filterBtn",
 resetButton: () => "#resetBtn",
 sortOptionCount: () => "#sort>option",
-itemSortingDropdown: () => "#DIV__sortselect__193",
-aboutUs: () => "#A____425",
-faq: () => "#A____427",
-help: () => "#A____429",
-myAccount: () => "#A____431",
-blog: () => "#A____433",
-contacts: () => "#A____435",
-quickLinksDropdown: () => "#H3____421",
-contactsDropdown: () => "#H3____437",
-keepInTouchDropdown: () => "#H3____447",
-contactEmail: () => "#A____445",
-contactLocation: () => "#LI____440",
+itemSortingDropdown: () => "#DIV__sortselect__194",
+aboutUs: () => "#A____426",
+faq: () => "#A____428",
+help: () => "#A____430",
+myAccount: () => "#A____432",
+blog: () => "#A____434",
+contacts: () => "#A____436",
+quickLinksDropdown: () => "#H3__opened__422",
+contactsDropdown: () => "#H3____438",
+keepInTouchDropdown: () => "#H3____448",
+contactEmail: () => "#A____446",
+contactLocation: () => "#LI____441",
 keepInTouchEmail: () => "#email_newsletter",
 sidebarFilterButton: () => "#A__openfilter__207",
 productPageShoeImage: () => "#shoe_img",
@@ -75,11 +75,16 @@ productPageShoeRatingText: () => "#BR____85",
 productPageShoeSize: () => "#DIV__row__88",
 productPageShoeQuantity: () => "#DIV__row__98",
 productPageShoeCartButton: () => "#A__btn__114",
-productPageShoeOldPrice: () => "#new_price",
-productPageShoeNewPrice: () => "#old_price",
+productPageShoeOldPrice: () => "#old_price",
+productPageShoeNewPrice: () => "#new_price",
 productPageShoeDiscount: () => "#discount",
-firstShoeProductPage: () => "#MAIN__bggray__64"
-
+firstShoeProductPage: () => "#MAIN__bggray__64",
+shoeSizeDropdown: () => ".list>li",
+shoeSizeDropdownElements: (shoeSizeItem) => `.list>li:nth-child(${shoeSizeItem})`,
+currentShoeSelection: () => ".current",
+ratingCountText: () => "#EM__ratingcoun__82",
+gridFilter: () => "#I__tiviewgrid__203",
+listFilter: () => "#A__openfilter__207"
 };
 
 const actions = {
@@ -135,6 +140,9 @@ const actions = {
     },
     clickFirstBlackShoe(){
         cy.get(elements.firstBlackShoeImage()).click();
+    },
+    clickCurrentShoeSelection(){
+        cy.get(elements.currentShoeSelection()).click();
     }
 
 };
@@ -203,9 +211,30 @@ const expects = {
         cy.get(elements.productPageShoeNewPrice()).should('be.visible');
         cy.get(elements.productPageShoeDiscount()).should('be.visible');
     },
+    validateCssProperies(element, cssDefinition, cssValue){
+        cy.get(element).should('have.css', `${cssDefinition}`, `${cssValue}`)
+    },
     validateProductImageUrl({productId}){
         cy.url().should('contain', `${productId}`);
-    }
+    },
+    validateAllShoeSizes(){
+        cy.get(elements.shoeSizeDropdown()).should(($lis) => {
+            expect($lis).to.have.length(4);
+            expect($lis.eq(0)).to.contain('Small (S)');
+            expect($lis.eq(1)).to.contain('M');
+            expect($lis.eq(2)).to.contain('L');
+            expect($lis.eq(3)).to.contain('XL');
+          })
+    },
+    validateRatingCountTextDisplay(){
+        cy.get(elements.ratingCountText()).should('not.have.css', `margin-left`, `-30px`)
+    },
+    validateGridItemCount(){
+        cy.get(elements.gridItems()).should(($lis) => {
+            expect($lis).to.have.length(9);
+        });
+    },
+    
 }
 
 export default {
