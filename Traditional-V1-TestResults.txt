@@ -1,86 +1,266 @@
-"Task: 1, Test Name: Displays logo, DOM Id: #A____8, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: Displays the top banner, DOM Id: #DIV__topbanner__187, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: Displays Account icon, DOM Id: #DIV__dropdowndr__55, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: Displays shoppingCart icon on navbar, DOM Id: #A__cartbt__49, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: Shows sorting options with consistent number of items on dropdown, DOM Id: #DIV__sortselect__193, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: should show equal number of items in the page, DOM Id: .grid_item, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: should show countdown consistency, DOM Id: .countdown, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: should show discounts consistency, DOM Id: .ribbon, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: shows language selection dropdown option, DOM Id: #DIV__styledsele__459, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: shows currency selection dropdown option, DOM Id: #DIV__styledsele__466, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: shows copyright information, DOM Id: #DIV__collg__470, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: Displays logo, DOM Id: #A____8, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
-"Task: 1, Test Name: Displays the top banner, DOM Id: #DIV__topbanner__187, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
-"Task: 1, Test Name: Displays Account icon, DOM Id: #DIV__dropdowndr__55, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
-"Task: 1, Test Name: Displays shoppingCart icon on navbar, DOM Id: #A__cartbt__49, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
-"Task: 1, Test Name: Shows sorting options with consistent number of items on dropdown, DOM Id: #DIV__sortselect__193, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
-"Task: 1, Test Name: should show equal number of items in the page, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
-"Task: 1, Test Name: should show countdown consistency, DOM Id: .countdown, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
-"Task: 1, Test Name: should show discounts consistency, DOM Id: .ribbon, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
-"Task: 1, Test Name: shows language selection dropdown option, DOM Id: #DIV__styledsele__459, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
-"Task: 1, Test Name: shows currency selection dropdown option, DOM Id: #DIV__styledsele__466, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
-"Task: 1, Test Name: shows copyright information, DOM Id: #DIV__collg__470, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
-"Task: 1, Test Name: Displays logo, DOM Id: #A____8, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: Displays the top banner, DOM Id: #DIV__topbanner__187, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: Displays Account icon, DOM Id: #DIV__dropdowndr__55, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: Displays shoppingCart icon on navbar, DOM Id: #A__cartbt__49, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: Shows sorting options with consistent number of items on dropdown, DOM Id: #DIV__sortselect__193, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: should show equal number of items in the page, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: should show countdown consistency, DOM Id: .countdown, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: should show discounts consistency, DOM Id: .ribbon, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows language selection dropdown option, DOM Id: #DIV__styledsele__459, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows currency selection dropdown option, DOM Id: #DIV__styledsele__466, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows copyright information, DOM Id: #DIV__collg__470, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows search placeholder on the search field, DOM Id: #INPUTtext____42, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: fail
-"Task: 1, Test Name: shows filter button, DOM Id: #filterBtn, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows reset button, DOM Id: #resetBtn, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows wishlist icon on navbar, DOM Id: #A__wishlist__52, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows submenu for item categories on navbar, DOM Id: #UL____21, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows type filtering option on sidebar, DOM Id: #A__opened__75, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows consistent number of items in type filter, DOM Id: #filter_0 ul li, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows colors filtering option on sidebar, DOM Id: #A__opened__100, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows consistent number of items in colors filter, DOM Id: #filter_1 ul li, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows brands filtering option on sidebar, DOM Id: #A__opened__130, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows consistent number of items in brands filter, DOM Id: #filter_2 ul li, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows price filtering option on sidebar, DOM Id: #A__opened__160, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows consistent number of items in price filter, DOM Id: #filter_3 ul li, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows wishlist icon and its tooltip, DOM Id: #I__tiheart__225, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows cart icon and its tooltip, DOM Id: #I__tishopping__233, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows compare icon and its tooltip, DOM Id: #I__ticontrols__229, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows email placeholder, DOM Id: #email_newsletter, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: shows cart icon with items ready for checkout, DOM Id: #STRONG____50, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows search placeholder on the search field, DOM Id: #INPUTtext____42, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: Displays search icon on navbar, DOM Id: #BUTTONsubmit____43, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows quick links footer items, DOM Id: #H3____421, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows contacts footer items, DOM Id: #H3____437, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows keep in touch items, DOM Id: #H3____447, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows email placeholder value, DOM Id: #email_newsletter, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 1, Test Name: shows cart icon with items ready for checkout, DOM Id: #STRONG____50, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: shows search placeholder on the search field, DOM Id: #INPUTtext____42, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: Displays search icon on navbar, DOM Id: #BUTTONsubmit____43, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: shows quick links footer items, DOM Id: #H3____421, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: shows contacts footer items, DOM Id: #H3____437, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: shows keep in touch items, DOM Id: #H3____447, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: shows email placeholder value, DOM Id: #email_newsletter, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: shows wishlist icon and its tooltip, DOM Id: #I__tiheart__225, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: shows cart icon and its tooltip, DOM Id: #I__tishopping__233, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: shows compare icon and its tooltip, DOM Id: #I__ticontrols__229, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: shows sidebar filter, DOM Id: #filterBtn, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 1, Test Name: shows wishlist icon and its tooltip, DOM Id: #I__tiheart__225, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
-"Task: 1, Test Name: shows cart icon and its tooltip, DOM Id: #I__tishopping__233, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
-"Task: 1, Test Name: shows compare icon and its tooltip, DOM Id: #I__ticontrols__229, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
-"Task: 1, Test Name: shows sidebar filter, DOM Id: #filterBtn, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
-"Task: 1, Test Name: Displays search icon, DOM Id: #A__btnsearchm__59, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
-"Task: 1, Test Name: shows quick links footer items, DOM Id: #H3____421, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
-"Task: 1, Test Name: shows contacts footer items, DOM Id: #H3____437, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
-"Task: 1, Test Name: shows keep in touch dropdown, DOM Id: #H3____447, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
-"Task: 1, Test Name: shows email placeholder, DOM Id: #email_newsletter, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
-"Task: 3, Test Name: can click the first shoe image and validate details, DOM Id: #shoe_img, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 3, Test Name: can click the first shoe image and validate details, DOM Id: #shoe_img, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
-"Task: 3, Test Name: can click the first shoe image and validate details, DOM Id: #shoe_img, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 2, Test Name: can filter all black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 2, Test Name: can filter the first black shoe based on the price, DOM Id: .grid_item, Browser: undefined, Viewport: 1200 X 700, Device: Laptop, Status: pass
-"Task: 2, Test Name: can filter all black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 2, Test Name: can filter the first black shoe based on the price, DOM Id: .grid_item, Browser: undefined, Viewport: 768 X 700, Device: Tablet, Status: pass
-"Task: 2, Test Name: can filter all black shoes based on color, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
-"Task: 2, Test Name: can filter the first black shoe based on the price, DOM Id: .grid_item, Browser: undefined, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+[CHROME BROWSER]
+
+"Task: 1, Test Name: Displays logo, DOM Id: #A____8, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: Displays the top banner, DOM Id: #DIV__topbanner__187, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: Displays Account icon, DOM Id: #DIV__dropdowndr__55, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: Displays shoppingCart icon on navbar, DOM Id: #A__cartbt__49, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: Shows sorting options with consistent number of items on dropdown, DOM Id: #DIV__sortselect__193, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: should show equal number of items in the page, DOM Id: .grid_item, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: should show countdown consistency, DOM Id: .countdown, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: should show discounts consistency, DOM Id: .ribbon, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows language selection dropdown option, DOM Id: #DIV__styledsele__459, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows currency selection dropdown option, DOM Id: #DIV__styledsele__466, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows copyright information, DOM Id: #DIV__collg__470, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: Displays logo, DOM Id: #A____8, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: Displays the top banner, DOM Id: #DIV__topbanner__187, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: Displays Account icon, DOM Id: #DIV__dropdowndr__55, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: Displays shoppingCart icon on navbar, DOM Id: #A__cartbt__49, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: Shows sorting options with consistent number of items on dropdown, DOM Id: #DIV__sortselect__193, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: should show equal number of items in the page, DOM Id: .grid_item, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: should show countdown consistency, DOM Id: .countdown, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: should show discounts consistency, DOM Id: .ribbon, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows language selection dropdown option, DOM Id: #DIV__styledsele__459, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows currency selection dropdown option, DOM Id: #DIV__styledsele__466, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows copyright information, DOM Id: #DIV__collg__470, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: Displays logo, DOM Id: #A____8, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: Displays the top banner, DOM Id: #DIV__topbanner__187, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: Displays Account icon, DOM Id: #DIV__dropdowndr__55, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: Displays shoppingCart icon on navbar, DOM Id: #A__cartbt__49, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: Shows sorting options with consistent number of items on dropdown, DOM Id: #DIV__sortselect__193, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: should show equal number of items in the page, DOM Id: .grid_item, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: should show countdown consistency, DOM Id: .countdown, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: should show discounts consistency, DOM Id: .ribbon, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows language selection dropdown option, DOM Id: #DIV__styledsele__459, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows currency selection dropdown option, DOM Id: #DIV__styledsele__466, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows copyright information, DOM Id: #DIV__collg__470, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows search placeholder on the search field, DOM Id: #INPUTtext____42, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows filter button, DOM Id: #filterBtn, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows reset button, DOM Id: #resetBtn, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows wishlist icon on navbar, DOM Id: #A__wishlist__52, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows submenu for item categories on navbar, DOM Id: #UL____21, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows type filtering option on sidebar, DOM Id: #A__opened__75, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows consistent number of items in type filter, DOM Id: #filter_0 ul li, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows colors filtering option on sidebar, DOM Id: #A__opened__100, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows consistent number of items in colors filter, DOM Id: #filter_1 ul li, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows brands filtering option on sidebar, DOM Id: #A__opened__130, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows consistent number of items in brands filter, DOM Id: #filter_2 ul li, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows price filtering option on sidebar, DOM Id: #A__opened__160, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows consistent number of items in price filter, DOM Id: #filter_3 ul li, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows wishlist icon and its tooltip, DOM Id: #I__tiheart__225, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows cart icon and its tooltip, DOM Id: #I__tishopping__233, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows compare icon and its tooltip, DOM Id: #I__ticontrols__229, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows email placeholder, DOM Id: #email_newsletter, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows cart icon with items ready for checkout, DOM Id: #STRONG____50, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows search placeholder on the search field, DOM Id: #INPUTtext____42, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: Displays search icon on navbar, DOM Id: #BUTTONsubmit____43, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows quick links footer items, DOM Id: #H3____421, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows contacts footer items, DOM Id: #H3____437, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows keep in touch items, DOM Id: #H3____447, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows email placeholder value, DOM Id: #email_newsletter, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows cart icon with items ready for checkout, DOM Id: #STRONG____50, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows search placeholder on the search field, DOM Id: #INPUTtext____42, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: Displays search icon on navbar, DOM Id: #BUTTONsubmit____43, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows quick links footer items, DOM Id: #H3____421, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows contacts footer items, DOM Id: #H3____437, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows keep in touch items, DOM Id: #H3____447, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows email placeholder value, DOM Id: #email_newsletter, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows wishlist icon and its tooltip, DOM Id: #I__tiheart__225, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows cart icon and its tooltip, DOM Id: #I__tishopping__233, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows compare icon and its tooltip, DOM Id: #I__ticontrols__229, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows sidebar filter, DOM Id: #filterBtn, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows wishlist icon and its tooltip, DOM Id: #I__tiheart__225, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows cart icon and its tooltip, DOM Id: #I__tishopping__233, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows compare icon and its tooltip, DOM Id: #I__ticontrols__229, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows sidebar filter, DOM Id: #filterBtn, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: Displays search icon, DOM Id: #A__btnsearchm__59, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows quick links footer items, DOM Id: #H3____421, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows contacts footer items, DOM Id: #H3____437, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows keep in touch dropdown, DOM Id: #H3____447, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows email placeholder, DOM Id: #email_newsletter, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 3, Test Name: can click the first shoe image and validate details, DOM Id: #shoe_img, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 3, Test Name: can click the first shoe image and validate details, DOM Id: #shoe_img, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 3, Test Name: can click the first shoe image and validate details, DOM Id: #shoe_img, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 2, Test Name: can filter all black shoes based on color, DOM Id: .grid_item, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 2, Test Name: can filter the first black shoe based on the price, DOM Id: .grid_item, Browser: chrome, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 2, Test Name: can filter all black shoes based on color, DOM Id: .grid_item, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 2, Test Name: can filter the first black shoe based on the price, DOM Id: .grid_item, Browser: chrome, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 2, Test Name: can filter all black shoes based on color, DOM Id: .grid_item, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 2, Test Name: can filter the first black shoe based on the price, DOM Id: .grid_item, Browser: chrome, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+
+[FIREFOX BROWSER]
+
+"Task: 1, Test Name: Displays logo, DOM Id: #A____8, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: Displays the top banner, DOM Id: #DIV__topbanner__187, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: Displays Account icon, DOM Id: #DIV__dropdowndr__55, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: Displays shoppingCart icon on navbar, DOM Id: #A__cartbt__49, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: Shows sorting options with consistent number of items on dropdown, DOM Id: #DIV__sortselect__193, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: should show equal number of items in the page, DOM Id: .grid_item, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: should show countdown consistency, DOM Id: .countdown, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: should show discounts consistency, DOM Id: .ribbon, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows language selection dropdown option, DOM Id: #DIV__styledsele__459, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows currency selection dropdown option, DOM Id: #DIV__styledsele__466, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows copyright information, DOM Id: #DIV__collg__470, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: Displays logo, DOM Id: #A____8, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: Displays the top banner, DOM Id: #DIV__topbanner__187, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: Displays Account icon, DOM Id: #DIV__dropdowndr__55, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: Displays shoppingCart icon on navbar, DOM Id: #A__cartbt__49, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: Shows sorting options with consistent number of items on dropdown, DOM Id: #DIV__sortselect__193, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: should show equal number of items in the page, DOM Id: .grid_item, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: should show countdown consistency, DOM Id: .countdown, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: should show discounts consistency, DOM Id: .ribbon, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows language selection dropdown option, DOM Id: #DIV__styledsele__459, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows currency selection dropdown option, DOM Id: #DIV__styledsele__466, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows copyright information, DOM Id: #DIV__collg__470, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: Displays logo, DOM Id: #A____8, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: Displays the top banner, DOM Id: #DIV__topbanner__187, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: Displays Account icon, DOM Id: #DIV__dropdowndr__55, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: Displays shoppingCart icon on navbar, DOM Id: #A__cartbt__49, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: Shows sorting options with consistent number of items on dropdown, DOM Id: #DIV__sortselect__193, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: should show equal number of items in the page, DOM Id: .grid_item, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: should show countdown consistency, DOM Id: .countdown, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: should show discounts consistency, DOM Id: .ribbon, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows language selection dropdown option, DOM Id: #DIV__styledsele__459, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows currency selection dropdown option, DOM Id: #DIV__styledsele__466, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows copyright information, DOM Id: #DIV__collg__470, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows search placeholder on the search field, DOM Id: #INPUTtext____42, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows filter button, DOM Id: #filterBtn, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows reset button, DOM Id: #resetBtn, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows wishlist icon on navbar, DOM Id: #A__wishlist__52, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows submenu for item categories on navbar, DOM Id: #UL____21, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows type filtering option on sidebar, DOM Id: #A__opened__75, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows consistent number of items in type filter, DOM Id: #filter_0 ul li, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows colors filtering option on sidebar, DOM Id: #A__opened__100, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows consistent number of items in colors filter, DOM Id: #filter_1 ul li, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows brands filtering option on sidebar, DOM Id: #A__opened__130, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows consistent number of items in brands filter, DOM Id: #filter_2 ul li, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows price filtering option on sidebar, DOM Id: #A__opened__160, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows consistent number of items in price filter, DOM Id: #filter_3 ul li, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows wishlist icon and its tooltip, DOM Id: #I__tiheart__225, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows cart icon and its tooltip, DOM Id: #I__tishopping__233, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows compare icon and its tooltip, DOM Id: #I__ticontrols__229, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows email placeholder, DOM Id: #email_newsletter, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows cart icon with items ready for checkout, DOM Id: #STRONG____50, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows search placeholder on the search field, DOM Id: #INPUTtext____42, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: Displays search icon on navbar, DOM Id: #BUTTONsubmit____43, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows quick links footer items, DOM Id: #H3____421, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows contacts footer items, DOM Id: #H3____437, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows keep in touch items, DOM Id: #H3____447, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows email placeholder value, DOM Id: #email_newsletter, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows cart icon with items ready for checkout, DOM Id: #STRONG____50, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows search placeholder on the search field, DOM Id: #INPUTtext____42, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: Displays search icon on navbar, DOM Id: #BUTTONsubmit____43, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows quick links footer items, DOM Id: #H3____421, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows contacts footer items, DOM Id: #H3____437, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows keep in touch items, DOM Id: #H3____447, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows email placeholder value, DOM Id: #email_newsletter, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows wishlist icon and its tooltip, DOM Id: #I__tiheart__225, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows cart icon and its tooltip, DOM Id: #I__tishopping__233, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows compare icon and its tooltip, DOM Id: #I__ticontrols__229, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows sidebar filter, DOM Id: #filterBtn, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows wishlist icon and its tooltip, DOM Id: #I__tiheart__225, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows cart icon and its tooltip, DOM Id: #I__tishopping__233, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows compare icon and its tooltip, DOM Id: #I__ticontrols__229, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows sidebar filter, DOM Id: #filterBtn, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: Displays search icon, DOM Id: #A__btnsearchm__59, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows quick links footer items, DOM Id: #H3____421, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows contacts footer items, DOM Id: #H3____437, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows keep in touch dropdown, DOM Id: #H3____447, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows email placeholder, DOM Id: #email_newsletter, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 3, Test Name: can click the first shoe image and validate details, DOM Id: #shoe_img, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: fail
+"Task: 3, Test Name: can click the first shoe image and validate details, DOM Id: #shoe_img, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: fail
+"Task: 3, Test Name: can click the first shoe image and validate details, DOM Id: #shoe_img, Browser: firefox, Viewport: iphone-x [portrait], Mobile: Laptop, Status: fail
+"Task: 2, Test Name: can filter the first black shoe based on the price, DOM Id: .grid_item, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 2, Test Name: can filter the first black shoe based on the price, DOM Id: .grid_item, Browser: firefox, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 2, Test Name: can filter all black shoes based on color, DOM Id: .grid_item, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 2, Test Name: can filter the first black shoe based on the price, DOM Id: .grid_item, Browser: firefox, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 2, Test Name: can filter all black shoes based on color, DOM Id: .grid_item, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 2, Test Name: can filter the first black shoe based on the price, DOM Id: .grid_item, Browser: firefox, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+
+[EDGE BROWSER]
+
+"Task: 1, Test Name: Displays logo, DOM Id: #A____8, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: Displays the top banner, DOM Id: #DIV__topbanner__187, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: Displays Account icon, DOM Id: #DIV__dropdowndr__55, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: Displays shoppingCart icon on navbar, DOM Id: #A__cartbt__49, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: Shows sorting options with consistent number of items on dropdown, DOM Id: #DIV__sortselect__193, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: should show equal number of items in the page, DOM Id: .grid_item, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: should show countdown consistency, DOM Id: .countdown, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: should show discounts consistency, DOM Id: .ribbon, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows language selection dropdown option, DOM Id: #DIV__styledsele__459, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows currency selection dropdown option, DOM Id: #DIV__styledsele__466, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows copyright information, DOM Id: #DIV__collg__470, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: Displays logo, DOM Id: #A____8, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: Displays the top banner, DOM Id: #DIV__topbanner__187, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: Displays Account icon, DOM Id: #DIV__dropdowndr__55, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: Displays shoppingCart icon on navbar, DOM Id: #A__cartbt__49, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: Shows sorting options with consistent number of items on dropdown, DOM Id: #DIV__sortselect__193, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: should show equal number of items in the page, DOM Id: .grid_item, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: should show countdown consistency, DOM Id: .countdown, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: should show discounts consistency, DOM Id: .ribbon, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows language selection dropdown option, DOM Id: #DIV__styledsele__459, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows currency selection dropdown option, DOM Id: #DIV__styledsele__466, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows copyright information, DOM Id: #DIV__collg__470, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: Displays logo, DOM Id: #A____8, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: Displays the top banner, DOM Id: #DIV__topbanner__187, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: Displays Account icon, DOM Id: #DIV__dropdowndr__55, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: Displays shoppingCart icon on navbar, DOM Id: #A__cartbt__49, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: Shows sorting options with consistent number of items on dropdown, DOM Id: #DIV__sortselect__193, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: should show equal number of items in the page, DOM Id: .grid_item, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: should show countdown consistency, DOM Id: .countdown, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: should show discounts consistency, DOM Id: .ribbon, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows language selection dropdown option, DOM Id: #DIV__styledsele__459, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows currency selection dropdown option, DOM Id: #DIV__styledsele__466, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows copyright information, DOM Id: #DIV__collg__470, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows search placeholder on the search field, DOM Id: #INPUTtext____42, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows filter button, DOM Id: #filterBtn, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows reset button, DOM Id: #resetBtn, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows wishlist icon on navbar, DOM Id: #A__wishlist__52, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows submenu for item categories on navbar, DOM Id: #UL____21, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows type filtering option on sidebar, DOM Id: #A__opened__75, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows consistent number of items in type filter, DOM Id: #filter_0 ul li, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows colors filtering option on sidebar, DOM Id: #A__opened__100, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows consistent number of items in colors filter, DOM Id: #filter_1 ul li, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows brands filtering option on sidebar, DOM Id: #A__opened__130, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows consistent number of items in brands filter, DOM Id: #filter_2 ul li, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows price filtering option on sidebar, DOM Id: #A__opened__160, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows consistent number of items in price filter, DOM Id: #filter_3 ul li, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows wishlist icon and its tooltip, DOM Id: #I__tiheart__225, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows cart icon and its tooltip, DOM Id: #I__tishopping__233, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows compare icon and its tooltip, DOM Id: #I__ticontrols__229, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows email placeholder, DOM Id: #email_newsletter, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows cart icon with items ready for checkout, DOM Id: #STRONG____50, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows search placeholder on the search field, DOM Id: #INPUTtext____42, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: Displays search icon on navbar, DOM Id: #BUTTONsubmit____43, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows quick links footer items, DOM Id: #H3____421, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows contacts footer items, DOM Id: #H3____437, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows keep in touch items, DOM Id: #H3____447, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows email placeholder value, DOM Id: #email_newsletter, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 1, Test Name: shows cart icon with items ready for checkout, DOM Id: #STRONG____50, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows search placeholder on the search field, DOM Id: #INPUTtext____42, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: Displays search icon on navbar, DOM Id: #BUTTONsubmit____43, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows quick links footer items, DOM Id: #H3____421, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows contacts footer items, DOM Id: #H3____437, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows keep in touch items, DOM Id: #H3____447, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows email placeholder value, DOM Id: #email_newsletter, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows wishlist icon and its tooltip, DOM Id: #I__tiheart__225, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows cart icon and its tooltip, DOM Id: #I__tishopping__233, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows compare icon and its tooltip, DOM Id: #I__ticontrols__229, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows sidebar filter, DOM Id: #filterBtn, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 1, Test Name: shows wishlist icon and its tooltip, DOM Id: #I__tiheart__225, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows cart icon and its tooltip, DOM Id: #I__tishopping__233, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows compare icon and its tooltip, DOM Id: #I__ticontrols__229, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows sidebar filter, DOM Id: #filterBtn, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: Displays search icon, DOM Id: #A__btnsearchm__59, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows quick links footer items, DOM Id: #H3____421, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows contacts footer items, DOM Id: #H3____437, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows keep in touch dropdown, DOM Id: #H3____447, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 1, Test Name: shows email placeholder, DOM Id: #email_newsletter, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 3, Test Name: can click the first shoe image and validate details, DOM Id: #shoe_img, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 3, Test Name: can click the first shoe image and validate details, DOM Id: #shoe_img, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 3, Test Name: can click the first shoe image and validate details, DOM Id: #shoe_img, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 2, Test Name: can filter all black shoes based on color, DOM Id: .grid_item, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 2, Test Name: can filter the first black shoe based on the price, DOM Id: .grid_item, Browser: edge, Viewport: 1200 X 700, Device: Laptop, Status: pass
+"Task: 2, Test Name: can filter all black shoes based on color, DOM Id: .grid_item, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 2, Test Name: can filter the first black shoe based on the price, DOM Id: .grid_item, Browser: edge, Viewport: 768 X 700, Device: Tablet, Status: pass
+"Task: 2, Test Name: can filter all black shoes based on color, DOM Id: .grid_item, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
+"Task: 2, Test Name: can filter the first black shoe based on the price, DOM Id: .grid_item, Browser: edge, Viewport: iphone-x [portrait], Device: Mobile, Status: pass
