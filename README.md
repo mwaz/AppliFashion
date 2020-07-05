@@ -66,28 +66,55 @@ module.exports = {
 
 **Running Visual AI Ultrafast Grid Tests**
 ---
+### Running V1 tests on ultragrid
 ```
-test:visual:dev
+test:ultragrid:v1
+```
+
+### Running V2 tests on ultragrid
+```
+test:ultragrid:v2
 ```
 
 
-**Running Traditional Tests**
+**Running Traditional Tests Version 1**
 ---
+
 ### 1. Chrome Browser
 
 ```
-test:chrome 
+test:chrome:v1
 ```
 ### 2. Firefox Browser
 
 ```
-test:firefox 
+test:firefox:v1
 ```
 
 ### 3. Edge Browser
 
 ```
-test:edge 
+test:edge:v1
+```
+
+**Running Traditional Tests Version 2**
+---
+
+### 1. Chrome Browser
+
+```
+test:chrome:v2
+```
+### 2. Firefox Browser
+
+```
+test:firefox:v2
+```
+
+### 3. Edge Browser
+
+```
+test:edge:v2
 ```
 
 **Configuration Options**
