@@ -5,10 +5,14 @@
   "main": "index.js",
   "scripts": {
     "open": "npx cypress open",
-    "test:ultragrid": "cypress run --browser chrome --env browser=chrome --spec 'cypress/tests/ModernTestsV1/*.spec.js'",
-    "test:chrome": "cypress run --browser chrome --env browser=chrome --spec 'cypress/tests/TraditionalTestsV2/*.spec.js'",
-    "test:firefox": "cypress run --browser firefox:nightly --env browser=firefox --spec 'cypress/tests/TraditionalTestsV2/*.spec.js'",
-    "test:edge": "cypress run --browser edge:dev --env browser=edge --spec 'cypress/tests/TraditionalTestsV2/*.spec.js'"
+    "test:ultragrid:v1": "cypress run --browser chrome --env browser=chrome --spec 'cypress/tests/ModernTestsV1/*.spec.js'",
+    "test:ultragrid:v2": "cypress run --browser chrome --env browser=chrome --spec 'cypress/tests/ModernTestsV2/*.spec.js'",
+    "test:chrome:v1": "cypress run --browser chrome --env browser=chrome --spec 'cypress/tests/TraditionalTestsV1/*.spec.js'",
+    "test:firefox:v1": "cypress run --browser firefox:nightly --env browser=firefox --spec 'cypress/tests/TraditionalTestsV1/*.spec.js'",
+    "test:edge:v1": "cypress run --browser edge:dev --env browser=edge --spec 'cypress/tests/TraditionalTestsV1/*.spec.js'",
+    "test:chrome:v2": "cypress run --browser chrome --env browser=chrome --spec 'cypress/tests/TraditionalTestsV2/*.spec.js'",
+    "test:firefox:v2": "cypress run --browser firefox:nightly --env browser=firefox --spec 'cypress/tests/TraditionalTestsV2/*.spec.js'",
+    "test:edge:v2": "cypress run --browser edge:dev --env browser=edge --spec 'cypress/tests/TraditionalTestsV2/*.spec.js'"
   },
   "keywords": [],
   "author": "Waweru Mwaura",
