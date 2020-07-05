@@ -229,12 +229,6 @@ const expects = {
     validateRatingCountTextDisplay(){
         cy.get(elements.ratingCountText()).should('not.have.css', `margin-left`, `-30px`)
     },
-    validateGridItemCount(){
-        cy.get(elements.gridItems()).should(($lis) => {
-            expect($lis).to.have.length(9);
-        });
-    },
-    
 }
 
 export default {
