@@ -75,8 +75,8 @@ productPageShoeRatingText: () => "#BR____85",
 productPageShoeSize: () => "#DIV__row__88",
 productPageShoeQuantity: () => "#DIV__row__98",
 productPageShoeCartButton: () => "#A__btn__114",
-productPageShoeOldPrice: () => "#new_price",
-productPageShoeNewPrice: () => "#old_price",
+productPageShoeOldPrice: () => "#old_price",
+productPageShoeNewPrice: () => "#new_price",
 productPageShoeDiscount: () => "#discount",
 firstShoeProductPage: () => "#MAIN__bggray__64"
 
@@ -202,6 +202,9 @@ const expects = {
         cy.get(elements.productPageShoeOldPrice()).should('be.visible');
         cy.get(elements.productPageShoeNewPrice()).should('be.visible');
         cy.get(elements.productPageShoeDiscount()).should('be.visible');
+    },
+    validateCssProperies(element, cssDefinition, cssValue){
+        cy.get(element).should('have.css', `${cssDefinition}`, `${cssValue}`)
     },
     validateProductImageUrl({productId}){
         cy.url().should('contain', `${productId}`);
