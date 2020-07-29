@@ -1,6 +1,6 @@
 module.exports = {
     concurrency: 10,
-    apiKey: '97wVHf9rSmxt5oSRhGb100101I07mx6RJUEJpEIQsv5cxuYU110',
+    apiKey: 'YOUR-APPLITOOLS-API-KEY-HERE',
     browser: [
         // configuration of different viewports
         {width: 1200, height: 700, name: 'chrome'},
